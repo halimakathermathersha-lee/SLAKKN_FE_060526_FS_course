@@ -1,0 +1,36 @@
+1. Opening Tag
+
+The starting tag of an element.
+
+Example:
+
+<p>
+2. Closing Tag
+
+The ending tag with /.
+
+Example:
+
+</p>
+
+3. Self-Closing Tag
+
+A tag that closes itself.
+
+Example:
+
+<br />
+<hr />
+<img src="image.jpg" />
+
+4. Empty Tag
+
+A tag with no content inside it.
+
+Examples:
+
+<br>
+<hr>
+<input>
+
+These are also called void elements in HTML.
