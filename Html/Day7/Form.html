@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <title>
+        Product List Form
+    </title>
+</head>
+
+<body>
+    <section>
+        <div>
+            <form>
+                <hr>
+                <center>
+                    <h1>Product List Form</h1>
+                </center>
+                <hr><br>
+                <fieldset>
+                    <legend>Product Details</legend><br>
+                    <label>Product Name :
+                    </label>
+                    <input type="text" placeholder="Enter the Product name" required><br><br>
+                    <label>Product Category :
+                    </label>
+                    <select required>
+                        <option value="" selected disabled>Select Product</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="food">Food</option>
+                        <option value="beautyproducts">Beauty Products</option>
+                        <option value="books">Books</option>
+                    </select><br><br>
+                    <label>Product Price :
+                    </label>
+                    <input type="number" placeholder="Enter the Product Price" required><br><br>
+                    <label>Product Quantity :
+                    </label>
+                    <input type="number" min="1" required><br><br>
+                    <label>Product image :
+                    </label>
+                    <input type="file" required><br><br>
+                </fieldset>
+                <section>
+                    <div>
+                        <fieldset>
+                            <legend> Shipping Details</legend><br>
+                            <label>Product ShipID :
+                            </label>
+                            <input type="number" placeholder="Enter the Product ShipID" required><br><br>
+                            <label>Product city :
+                            </label><br>
+
+                            <input type="radio" name="city">Chennai<br>
+                            <input type="radio" name="city">Madurai<br>
+                            <input type="radio" name="city">Erode<br>
+                            <input type="radio" name="city">kanya kumari<br>
+                            <input type="radio" name="city">Vilupuram<br><br>
+
+                            <label>Product Weight :
+                            </label>
+                            <input type="number" placeholder="Enter the Product Price in kg" required><br><br>
+
+                            <label>Does the Product have a Licence :
+                            </label>
+                            <input type="radio" name="lic" required>Yes
+                            <input type="radio" name="lic" readonly>No<br><br>
+                            <label>Approved List :
+                            </label><br>
+                            <input type="checkbox">FSSAI<br>
+                            <input type="checkbox">GST<br>
+                            <input type="checkbox">ISO Certified<br>
+                            <input type="checkbox">Government Approved<br>
+
+                        </fieldset><br>
+                        <input type="submit" value="Add Product">
+                        <input type="reset" value="Clear Form">
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <fieldset>
+                <legend>Product Details Table
+                </legend>
+                <center>
+                    <table border="2">
+
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>ID</th>
+                                <th>Weight(kg)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Laptop</td>
+                                <td>Electronics</td>
+                                <td>500000</td>
+                                <td>22</td>
+                                <td>101</td>
+                                <td>20</td>
+                            </tr>
+
+                            <tr>
+                                <td>Chocolate</td>
+                                <td>Food</td>
+                                <td>10000</td>
+                                <td>50</td>
+                                <td>102</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>Material</td>
+                                <td>Clothing</td>
+                                <td>500000</td>
+                                <td>60</td>
+                                <td>192</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>Ponds</td>
+                                <td>Beauty Products</td>
+                                <td>500000</td>
+                                <td>100</td>
+                                <td>521</td>
+                                <td>600</td>
+                            </tr>
+                            <tr>
+                                <td>Literature</td>
+                                <td>Books</td>
+                                <td>7000</td>
+                                <td>400</td>
+                                <td>802</td>
+                                <td>600</td>
+                            </tr>
+                            <tr>
+                                <td>chips</td>
+                                <td>Food</td>
+                                <td>90000</td>
+                                <td>4000</td>
+                                <td>542</td>
+                                <td>800</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </center>
+            </fieldset>
+        </div>
+    </section>
+</body>
+
+</html>
