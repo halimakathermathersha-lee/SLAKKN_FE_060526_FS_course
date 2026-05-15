@@ -1,91 +1,117 @@
 <html>
-    <head><title>
+
+<head>
+    <title>
         Student Registration
-    </title></head>
-    <body>
-        <section>
-<div>
-<form>
+    </title>
+</head>
 
-<hr>
-<center><h1>Student Registration Form</h1></center>
-<hr><br>
+<body>
+    <section>
+        <div>
+            <form>
 
-<fieldset>
+                <hr>
+                <center>
+                    <h1>Student Registration Form</h1>
+                </center>
+                <hr><br>
 
-<legend>Student Details</legend>
+                <fieldset>
 
-<label>Name :</label>
-<input type="text"
-placeholder="Enter Name"
-required
-maxlength="30"
-autofocus>
+                    <legend>Student Details</legend>
 
-<br><br>
+                    <label>Name :</label>
+                    <input type="text" placeholder="Enter Name" required maxlength="30" autofocus>
 
-<label>Email :</label>
-<input type="email"
-placeholder="Enter Email"
-required>
+                    <br><br>
 
-<br><br>
+                    <label>Email :</label>
+                    <input type="email" placeholder="Enter Email" required>
 
-<label>Password :</label>
-<input type="password"
-placeholder="Enter Password"
-minlength="6"
-maxlength="12"
-required>
+                    <br><br>
 
-<br><br>
+                    <label>Password :</label>
+                    <input type="password" placeholder="Enter Password" minlength="6" maxlength="12" required>
 
-<label>Gender :</label>
+                    <br><br>
 
-<input type="radio" name="gender">Male
-<input type="radio" name="gender">Female
+                    <label>Gender :</label>
 
-<br><br>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <br><br>
 
-<label>Skills :</label>
+                    <label>Degree :</label>
 
-<input type="checkbox">HTML
-<input type="checkbox">CSS
-<input type="checkbox">Java
+                    <input type="radio" name="d">B.E /B.Tech
+                    <input type="radio" name="d">M.E/M.Tech
+                    <input type="radio" name="d">B.sc /BCA/MCA
+                    <input type="radio" name="d">Other science Degree
 
-<br><br>
+                    <br><br>
 
-<label>Department :</label>
+                    <label>College Name :</label>
+                    <input type="text" placeholder="Your Answer" required>
 
-<select required>
+                    <label>Skills :</label>
 
-<option selected disabled>
-Select Department
-</option>
+                    <input type="checkbox">HTML
+                    <input type="checkbox">CSS
+                    <input type="checkbox">Java
 
-<option>BCA</option>
-<option>BSc CS</option>
-<option>BCom</option>
+                    <br><br>
 
-</select>
+                    <label>State :</label>
 
-<br><br>
+                    <select required>
 
-<label>Address :</label><br>
+                        <option selected disabled>
+                            choose
+                        </option>
 
-<textarea rows="4"
-cols="30"
-placeholder="Enter Address">
-</textarea>
+                        <option>Delhi</option>
+                        <option>Tamil Nadu</option>
+                        <option>Kerala</option>
 
-</fieldset>
+                    </select>
 
-<br>
+                    <label>Year of passing :</label>
 
-<input type="submit" value="Register">
+                    <select required>
 
-</form>
-</div>
-</section>
-    </body>
+                        <option selected disabled>
+                            choose
+                        </option>
+
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label>Address :</label><br>
+
+                    <textarea rows="4" cols="30" placeholder="Enter Address">
+                    </textarea>
+
+                </fieldset>
+                <fieldset>
+                    <Legend>Acknowledge</Legend>
+                    <p>
+                        Thank you.Your refgistration has been received.once again check your details , we will reach you shortly
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <input type="submit" value="Register">
+
+            </form>
+        </div>
+    </section>
+</body>
+
 </html>

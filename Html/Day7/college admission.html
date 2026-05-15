@@ -1,59 +1,114 @@
 <html>
-    <head>
-        <title>
-            College Admiision
-        </title>
-    </head>
-    <body>
-        <form>
 
-<fieldset>
+<head>
+    <title>
+        College Admiision
+    </title>
+</head>
 
-<legend>
-College Admission Form
-</legend>
+<body>
+    <form>
 
-<label>Name :</label>
+         <hr>
+                <center>
+                    <h1> College Admission Form</h1>
+                </center>
+                <hr><br>
 
-<input type="text"
-required>
+        <fieldset>
 
-<br><br>
+            <legend>
+                College Admission Form
+            </legend>
 
-<label>Email :</label>
+            <label>Name :</label>
 
-<input type="email">
+            <input type="text" placeholder="Your Answer" required>
 
-<br><br>
+            <br><br>
 
-<label>Course :</label>
+            <label>Email :</label>
 
-<select>
+            <input type="email" placeholder="Your Answer" required>
 
-<optgroup label="UG Courses">
+            <br><br>
 
-<option>BCA</option>
-<option>BSc CS</option>
-<option>BCom</option>
+            <label>Password :</label>
 
-</optgroup>
+            <input type="password" placeholder="Your Answer" required>
 
-<optgroup label="PG Courses">
+            <br><br>
 
-<option>MCA</option>
-<option>MSc</option>
+            <label>mobile Number :</label>
 
-</optgroup>
+            <input type="number" minlength="10" maxlength="10" placeholder="Your Answer" required>
 
-</select>
+            <br><br>
 
-<br><br>
+            <label>Gender :</label>
 
-<input type="submit"
-value="Apply">
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <br><br>
 
-</fieldset>
+                     <label>State :</label>
 
-</form>
-    </body>
+                    <select required>
+
+                        <option selected disabled>
+                            choose
+                        </option>
+
+                        <option>Delhi</option>
+                        <option>Tamil Nadu</option>
+                        <option>Kerala</option>
+
+                    </select><br><br>
+
+                    <label>
+                        Upload Your Pic: 
+                    </label>
+                    <input type="file" ><br><br>
+                    <label>Enter Your 10th mark</label>
+                    <input type="number" placeholder="Enter mark" required><br><br>
+                    <label>Enter Your 12th mark</label>
+                    <input type="number" placeholder="Enter mark" required><br><br>
+
+            <label>Course :</label>
+
+            <select>
+
+                <optgroup label="UG Courses">
+
+                    <option>BCA</option>
+                    <option>BSc CS</option>
+                    <option>BCom</option>
+
+                </optgroup>
+
+                <optgroup label="PG Courses">
+
+                    <option>MCA</option>
+                    <option>MSc</option>
+
+                </optgroup>
+
+            </select><br><br>
+
+            
+                    <label>Address :</label><br>
+
+                    <textarea rows="4" cols="30" placeholder="Enter Address">
+                    </textarea>
+
+
+            <br><br>
+
+            <input type="submit" value="Apply">
+
+        </fieldset>
+
+    </form>
+</body>
+
 </html>
