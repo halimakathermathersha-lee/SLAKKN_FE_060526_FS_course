@@ -1,0 +1,25 @@
+
+    div{
+        background-color: black;
+    }
+    h1{
+        color:blue;
+    }
+    h2{
+        color:white;
+        width: 1000px;
+        
+    }
+    h3{
+        color:aqua;
+        width: 1000px;
+        
+    }
+    p{
+        color: blueviolet;
+        width: 1500px;
+        
+    }
+    ul{
+        color: brown;
+    }

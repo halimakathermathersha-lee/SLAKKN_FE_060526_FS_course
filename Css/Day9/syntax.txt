@@ -1,0 +1,188 @@
+
+Inline syntax
+
+<h1 style="properties:value; properties:value;properties:value;"></h1>
+<h1 style="proprties:value;properties:value;properties:value;"></h12>
+<h1 style="properties:value;properties:value;properies:value;"></h1>
+<h1 style="properties:value;properties:value;propergties:value;"></h1>
+<h1 style="properties:value;properties:value;properties:value;"></h1>
+<h1 style="properties:value;properties:value;properties:value;"></h1>
+<h1 style="properties:value;properties:value;properties:value;"></h1>
+<h1 style="properties:value;properties:value;properties:value;"</h1>
+<h1 style="properties:value;properties:value;properties:value;"></h1>
+<h1 style="properties:value;properties:value;properties:value;"></h1>
+<h1 style="properties:value;properties:value;properties:value;"></h1>
+<h1 style="properties:value;properties:value;properties;value;"></h1>
+<h1 style="properties:value;properties:value;properties:value;"></h1>
+<h1 style="properties:value; properties:value;properties:value;"></h1>
+<h1 style="properties:value; properties:value;properties:value;"></h1>
+<h1 style="properties:value; properties:value;properties:value;"></h1>
+<h1 style="properties:value; properties:value;properties:value;"></h1>
+<h1 style="properties:value; properties:value;properties:value;"></h1>
+<h1 style="properties:value; properties:value;properties:value;"></h1>
+<h1 style="properties:value; properties:value;properties:value;"></h1>
+
+intenal syntax
+
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    propereties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    propereties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
+selector{
+    properties:value;
+    properties:value;
+    properties:value;
+}
