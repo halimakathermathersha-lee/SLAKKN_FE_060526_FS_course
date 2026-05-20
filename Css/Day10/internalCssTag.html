@@ -6,31 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>internal</title>
     <style>
+        *{
+            background-color: cornflowerblue;
+        }
         h1 {
-            color: blue;
+            color: forestgreen;
             width: 200px;
             height: 100px;
         }
 
         h2 {
-            background-color: blue;
+            
             color: black;
-            width: 1000px;
-            height: 100px;
         }
 
         h3 {
             color: aqua;
-            width: 1000px;
-            height: 100px;
-            background-color: blueviolet;
+            
         }
 
-        p {
-            color: blueviolet;
-            width: 1500px;
-            height: 80px;
+        #mine{
+            color:aqua
         }
+
+        #kind{
+            color: darkred;
+        }
+        .topics{
+            color: hotpink;
+        }
+
+        .heading{
+            color: black;
+        }
+
+        #about{
+            background-color: black !important;
+            color: gold !important;
+        }
+
     </style>
 </head>
 
@@ -39,7 +53,7 @@
         <div>
             <h1>Technology and Innovation</h1>
 
-            <p>
+            <p class="heading">
                 Technology plays an important role in modern life. It helps people
                 communicate, learn new skills, and complete tasks faster. Innovations
                 in computers, mobile devices, and the internet have changed the way
@@ -48,8 +62,8 @@
 
         </div>
     </section>
-    <section>
-        <div>
+    <section id="about">
+        <div >
             <h2>Importance of Education</h2>
 
             <p>
@@ -69,8 +83,8 @@
         </div>
     </section>
     <section>
-        <div>
-            <h2>Environmental Protection</h2>
+        <div id="mine">
+            <h2 class="topics">Environmental Protection</h2>
 
             <p>
                 Protecting the environment is important for a healthy future. Planting
@@ -79,13 +93,13 @@
             </p>
             <h2>Our Services</h2>
 
-            <ul>
+            <ul id="kind">
                 <li>Tree Plantation</li>
                 <li>Environmental Awareness</li>
                 <li>Wildlife Protection</li>
             </ul>
 
-            <h3>Sports and Fitness</h3>
+            <h3 class="topics">Sports and Fitness</h3>
 
             <p>
                 Sports and fitness activities improve physical health and mental strength.

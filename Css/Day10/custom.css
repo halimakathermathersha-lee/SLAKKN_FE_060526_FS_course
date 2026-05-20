@@ -1,0 +1,38 @@
+
+*{
+    background-color: aquamarine;
+}
+    div{
+        background-color: black;
+    }
+    h1{
+        color:blue;
+    }
+    h2{
+        color:red;
+        
+        
+    }
+    h3{
+        color:aqua;
+    
+        
+    }
+    p{
+        color: blueviolet;
+    
+        
+    }
+    ul{
+        color: brown;
+    }
+    #lime{
+        color:yellow;
+        background-color:pink;
+    }
+    .green{
+        color:forestgreen;
+    }
+    .like{
+        color: crimson;
+    }
