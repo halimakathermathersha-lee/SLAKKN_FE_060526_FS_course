@@ -1,0 +1,28 @@
+*{
+    
+    border: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.Mine{
+    color: aqua;
+    background-color: skyblue;
+    padding: 10px;
+    border: solid black 5px;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+
+}
+.Lime{
+    text-align: center;
+    background-color: blue;
+    padding: 5px;
+    border: solid black 3px;
+}
+.like{
+    background-color: white;
+    padding: 10px;
+    color: black;
+}

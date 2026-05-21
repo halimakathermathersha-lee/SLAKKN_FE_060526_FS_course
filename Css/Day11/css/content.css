@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Mine{
+    background-color: rgb(223, 232, 57);
+    padding:10px;
+    border: solid #180909 5px;
+    margin: auto;
+    width: 600px; 
+    height: 500px;
+}
+
+.Lime{
+    background-color: aqua;
+    padding: 10px;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.Like{
+    background-color: black;
+    padding: 10px;
+    color: aliceblue;
+    padding: 20px;
+}
+.Mee{
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+    margin: 5px;
+}
+
+.Lee{
+    text-align: center;
+    background-color: aliceblue;
+    color: yellowgreen;
+    margin-bottom: 5px;
+}

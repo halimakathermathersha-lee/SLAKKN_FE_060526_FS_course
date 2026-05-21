@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.A{
+    background-color: rgb(142, 48, 190);
+    padding: 20px;
+    border: solid black 5px;
+    margin: auto;
+    width: 750px;
+}
+.B{
+    background-color: whitesmoke;
+    padding: 10px;
+    border: solid black 5px;
+}
+.ol{
+    color: red;
+    text-align: center;
+}
+.C{
+    background-color: cadetblue;
+    text-align: center;
+    padding: 10px;
+    border: solid black 3px;
+    margin-bottom: 5px;
+}
+.D{
+    background-color: steelblue;
+    padding: 10px;
+    border: solid;
+}
+.E{
+    background-color: coral;
+    padding: 5px;
+    text-align: center;
+    border: solid black 3px;
+}
+.F{
+    background-color: beige;
+    border: solid black 3px;
+}
