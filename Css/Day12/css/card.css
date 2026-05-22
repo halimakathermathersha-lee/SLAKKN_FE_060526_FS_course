@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    
+}
+
+.card{
+    width:300px;
+    height: 300px;
+    padding-top: 20px;
+    background-color:rgb(97, 187, 217);
+    border-radius:10px;
+    text-align:center;
+    border: solid black 5px;
+    overflow: hidden;
+}
+.A img{
+    height: 242px;
+    width: 300px;
+    
+}
+
+.B{
+    background-color: bisque;
+    height: 350px;
+    width: 1550px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}

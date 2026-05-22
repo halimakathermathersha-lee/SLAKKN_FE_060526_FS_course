@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+.child{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    padding: 15px;
+}
+.parent{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 1500px;
+    height: 400px;
+    padding: 20px;
+}
+.led{
+    background-color: rgb(226, 194, 67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 694px;
+}
+
