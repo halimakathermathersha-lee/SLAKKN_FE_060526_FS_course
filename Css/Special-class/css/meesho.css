@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image{
+     padding-left: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.search{
+    width: 600px;
+    height: 45px;
+    border-radius: 5px;
+    border: solid black 1px;
+    font-size: 15px;
+    padding-left: 40px;
+    margin-left: 35px;
+}
+.line{
+    border: solid rgb(207, 205, 205) 1px;
+    height: 35px;
+    margin: 0 10px;
+    
+}
+
+.menu{
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+.menu a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.menubar{
+    display: flex;
+    flex-direction: row;
+    width: 1400px;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 70px;
+    gap: 30px;
+    
+}
+
+.menubar a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.belowbanner{
+    background: rgb(253, 238, 250);
+    padding: 12px;
+    height: 70px;
+}
+
+.bbbox{
+    border-radius: 8px;
+    border: 1px solid rgba(220, 148, 208, 0.5);
+    background: rgb(255, 255, 255);
+    width: 1500px;
+    height: 45px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    gap: 40px;
+}
+
+.pink{
+    border: solid rgba(222, 160, 211, 0.5) 1px ;
+    height: 15px;
+    margin:0 5px
+}
+.alpha{
+    padding: 50px;
+}
+.A{
+    margin: 10px;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.B{
+
+    text-decoration: none;
+    color: rgb(95, 45, 120);
+    font-size: 20px;
+    display: inline;   
+}
+.C{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 25px;
+    margin-left: 40px;
+}
+
+.E{
+    display: inline-block;
+    background-color: rgb(131, 41, 94);
+    height: 400px;
+    width: 1100px;
+    display: flex;
+    gap: 40px;
+    box-shadow: 10px 0px 50px rgb(9, 9, 9);
+    padding: 60px;
+}
+.D{
+    display: inline-block;
+    background-color: rgb(231, 151, 39);
+    height: 400px;
+    width: 450px;
+    border: none;
+    
+}
+.beta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
