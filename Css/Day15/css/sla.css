@@ -5,10 +5,160 @@
 }
 body{
     font-family:'Inter',sans-serif;
-    background:#ffffff;
+    background:#e2e1e1b8;
     color:#111111;
 }
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
+    .A{
+      background:#061b3b;
+      color:white;
+      padding:30px;
+      display:grid;
+      grid-template-columns:1fr auto;
+      align-items:center;
+      gap: 30px;
+    }
+
+    .B{
+      display:flex;
+      align-items:center;
+      gap:15px;
+    }
+
+    .course-name{
+      font-size:18px;
+      font-weight:bold;
+    }
+
+    .copy{
+      border:solid white 1px;
+      padding: 2px;
+      font-size: 12px;
+      width: 90px;
+      border-radius:4px;
+      color: white;
+      text-align: center;
+    }
+
+    .preview{
+      border:solid white 1px;
+      padding: 5px;
+      padding-left: 15px;
+      padding-right: 20px;
+      font-size: 12px;
+      border-radius:6px;
+      color: white;
+    }
+
+    .menu{
+      display:grid;
+      grid-template-columns:repeat(8,auto);
+      gap:10px;
+    }
+
+    .menu a{
+      text-decoration:none;
+      color:#d8d8d8;
+      font-size:14px;
+    }
+
+    .menu .active{
+      color:orange;
+      border-bottom:2px solid orange;
+      padding-bottom:5px;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      margin: 40px;
+      margin-top:25px;
+      border-radius:10px;
+      box-shadow:0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .details-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:7px;
+    }
+
+    .title{
+      font-size:22px;
+      font-weight:bold;
+    }
+
+    .small{
+      color:#666;
+      font-size:14px;
+    }
+    .url{
+        font-size: 14px;
+        color: rgba(0, 0, 255, 0.726);
+    }
+
+    .description{
+      line-height:1.8;
+      color:#444;
+    }
+
+    .thumb-grid{
+      display:grid;
+      grid-template-columns:200px 1fr;
+      gap:30px;
+      align-items:center;
+    }
+
+    .note{
+      line-height:1.8;
+      color:#555;
+      font-size:14px;
+    }
+
+    .upload-btn{
+      margin-top:15px;
+      background:rgb(255, 85, 0);
+      border:none;
+      color:white;
+      padding:10px 18px;
+      border-radius:4px;
+
+    }
+
+
+
+    .add{
+      color:#4d63ff;
+    }
+
+    .trainer-grid{
+      display:grid;
+      grid-template-columns:2fr 1fr 1fr 1fr;
+      align-items:center;
+      gap:20px;
+      padding: 10px;
+    }
+
+    .trainer-info{
+      display:grid;
+      grid-template-columns:100px 1fr;
+      gap:15px;
+      align-items:center;
+    }
+
+    
+
+    .name{
+      font-weight:bold;
+      margin-bottom:5px;
+    }
+
+    .email{
+      color:#666;
+      font-size:14px;
+    }
+  
