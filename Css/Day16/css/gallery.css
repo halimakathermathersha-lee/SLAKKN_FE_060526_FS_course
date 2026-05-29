@@ -1,0 +1,56 @@
+
+body{
+  background:#222;
+  padding:40px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.image-box{
+  position:relative;
+  overflow:hidden;
+  border-radius:15px;
+}
+
+.image-box img{
+  width:100%;
+  display:block;
+  transition:0.5s;
+}
+
+.image-box::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+  opacity:0;
+  transition:0.5s;
+}
+
+.image-box::after{
+  content:"View";
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:white;
+  font-size:25px;
+  opacity:0;
+  transition:0.5s;
+}
+
+.image-box:hover img{
+  transform:scale(1.2);
+}
+
+.image-box:hover::before{
+  opacity:1;
+}
+
+.image-box:hover::after{
+  opacity:1;
+}

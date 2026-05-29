@@ -1,0 +1,23 @@
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+button{
+  padding:15px 35px;
+  border:none;
+  background:orange;
+  color:white;
+  font-size:18px;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.1);
+  background:red;
+}
