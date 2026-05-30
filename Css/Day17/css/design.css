@@ -1,14 +1,93 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family:'Inter',sans-serif;
-    background:#e2e1e1b8;
-    color:#111111;
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #e2e1e1b8;
+    color: #111111;
 }
-html{
+
+html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.child {
+    background-color: rgba(255, 255, 255, 0.673);
+    width: 340px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.I {
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.I img{
+    height: 250px;
+}
+
+.card-content {
+    font-size: medium;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.btn {
+    width: 300px;
+    background: rgb(92, 89, 89);
+    color: white;
+    border-radius: 20px;
+    padding: 7px;
+    cursor:pointer;
+    transition:0.3s;
+    display: flex;
+     align-items: center;
+    justify-content: center; 
+
+}
+.btn:hover{
+  transform:scale(1.1);
+  background:white;
+  color: black;
+  border: solid rgb(92, 89, 89) 1px;
+}
+.B{ 
+   width: 100%;
+   display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 10px;
+}
+.badge{
+    background-color: rgb(242, 86, 20);
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-40deg);
+    top: 40px;
+    left: -40px;
+    width: 190px;
+    text-align: center;
 }

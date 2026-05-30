@@ -1,0 +1,547 @@
+# CSS (Cascading Style Sheets)
+
+CSS is a stylesheet language used to control the appearance and layout of HTML webpages.
+It helps to design webpages by adding colors, spacing, fonts, alignment, animations, and responsive layouts.
+
+
+# 1. Layout in CSS
+
+      Layout means arranging elements properly on a webpage.
+      It decide  which content in which place to show on your screen
+
+# 2. Styling in CSS
+
+Styling means changing the visual appearance of HTML elements.
+
+Styling includes:
+
+* Text color
+* Background color
+* Font style
+* Borders
+* Shadows
+* Spacing
+* Animations
+
+---
+
+# 3. Types of CSS
+
+## 1. Inline CSS
+
+CSS written directly inside an HTML element using the `style` attribute.
+
+
+## 2. Internal CSS
+
+CSS written inside the `<style>` tag in the HTML document.
+
+
+## 3. External CSS
+
+CSS written in a separate `.css` file and linked to HTML.
+
+
+# 4. Selector
+
+Selectors are used to select HTML elements for styling.
+
+## Types of Selectors
+
+### 1. Element Selector
+
+Selects HTML tags directly.
+
+### 2. Class Selector
+
+Selects elements using class names.
+
+### 3. ID Selector
+
+Selects elements using unique IDs.
+
+### 4. Universal Selector
+
+Selects all elements in a webpage.
+
+### 5. Group Selector
+
+Selects multiple elements together.
+
+### 6. Descendant Selector
+
+Selects child elements inside a parent.
+
+### 7. Child Selector
+
+Selects direct child elements only.
+
+### 8. Adjacent Sibling Selector
+
+Selects the next immediate sibling.
+
+### 9. General Sibling Selector
+
+Selects all sibling elements.
+
+---
+
+# 5. Attribute Selector
+
+Attribute selectors select elements based on HTML attributes.
+
+They are useful for:
+
+* Forms
+* Links
+* Inputs
+* Dynamic styling
+
+
+# 6. Cascading
+
+Cascading means applying multiple CSS rules to the same element according to priority.
+
+CSS follows an order to decide which style should apply.
+
+Priority order:
+
+1. Inline CSS
+2. Internal CSS
+3. External CSS
+
+If multiple rules exist, the latest or strongest rule is applied.
+
+---
+
+# 7. Specificity
+
+Specificity determines which CSS rule has more importance.
+
+Priority order:
+
+1. Inline styles
+2. ID selectors
+3. Class selectors
+4. Element selectors
+
+Higher specificity overrides lower specificity.
+
+---
+
+# 8. Typography Properties
+
+Typography refers to text styling and readability.
+
+Typography properties control:
+
+* Font size
+* Font family
+* Font weight
+* Text alignment
+* Letter spacing
+* Line spacing
+* Text decoration
+* Text transformation
+
+Typography improves webpage readability and appearance.
+
+---
+
+# 9. Box Model
+
+Every HTML element is treated as a rectangular box in CSS.
+
+The CSS box model contains:
+
+1. Content
+2. Padding
+3. Border
+4. Margin
+
+The box model controls spacing and element size.
+
+
+
+# 10. Content, Border, Margin, Padding, Parent, Child, Wrapping
+
+## Content
+
+The actual text, image, or data inside an element.
+
+---
+
+## Padding
+
+Space between content and border.
+
+---
+
+## Border
+
+Line surrounding the padding and content.
+
+---
+
+## Margin
+
+Space outside the border between elements.
+
+---
+
+## Parent Element
+
+An element containing another element inside it.
+
+---
+
+## Child Element
+
+An element placed inside a parent element.
+
+---
+
+## Wrapping
+
+Moving elements to the next line when there is no space.
+
+---
+
+# 11. Flexbox
+
+Flexbox is a one-dimensional layout system.
+
+Flexbox works in:
+
+* Rows 
+or
+* Columns
+
+
+# 12. Flex Properties
+
+Flex properties are divided into:
+
+## Parent Properties
+
+Used on the flex container.
+
+Main properties:
+
+* flex-direction
+* justify-content
+* align-items
+* flex-wrap
+* gap
+
+---
+
+## Child Properties
+
+Used on flex items.
+
+Main properties:
+
+* flex-grow
+* flex-shrink
+* flex-basis
+* align-self
+
+---
+
+# 13. CSS Units
+
+CSS units define measurements for width, height, spacing, and text size.
+
+## Types of Units
+
+### Absolute Units
+
+Fixed-size units.
+
+Examples:
+
+* px
+* cm
+* mm
+
+---
+
+### Relative Units
+
+Responsive units based on screen or parent size.
+
+Examples:
+
+* %
+* em
+* rem
+* vh
+* vw
+
+---
+
+# 14. CSS Colors
+
+CSS colors are used to style text, backgrounds, and borders.
+
+## Color Methods
+
+### 1. Color Names
+
+Using predefined color names.
+
+---
+
+### 2. HEX Colors
+
+Uses hexadecimal values.
+
+---
+
+### 3. RGB Colors
+
+Uses Red, Green, Blue values.
+
+---
+
+### 4. RGBA Colors
+
+RGB with transparency.
+
+---
+
+### 5. HSL Colors
+
+Uses Hue, Saturation, and Lightness.
+
+---
+
+# 15. Background Properties
+
+Background properties control element backgrounds.
+
+Main background properties:
+
+* background-color
+* background-image
+* background-size
+* background-repeat
+* background-position
+* background-attachment
+
+These properties improve webpage design and appearance.
+
+---
+
+# 16. Grid
+
+CSS Grid is a two-dimensional layout system.
+
+It works with:
+
+* Rows
+and
+* Columns
+
+Grid is mainly used for:
+
+* Website layouts
+* Dashboards
+* Galleries
+
+
+# 17. Grid Properties
+
+Grid properties are divided into:
+
+## Parent Properties
+
+Used on grid containers.
+
+Main properties:
+
+* grid-template-columns
+* grid-template-rows
+* gap
+* justify-content
+* align-items
+
+---
+
+## Child Properties
+
+Used on grid items.
+
+Main properties:
+
+* grid-column
+* grid-row
+* justify-self
+* align-self
+
+---
+
+# 18. Flex vs Grid
+
+## Flexbox
+
+* One-dimensional layout
+* Works in row OR column
+* Customer side
+*Normal Layout
+
+
+
+## Grid
+
+* Two-dimensional layout
+* Works in rows AND columns
+* Vms side
+*Complex Layout
+
+---
+
+# 19. Pseudo Class
+
+Pseudo classes define special states of elements.
+
+They are used for:
+
+* Hover effects
+* Focus effects
+* Selecting first or last elements
+* User interaction styling
+
+Examples of pseudo classes:
+
+* hover
+* focus
+* first-child
+* last-child
+* nth-child
+
+---
+
+# 20. Pseudo Element
+
+Pseudo elements style specific parts of an element.
+
+They are used for:
+
+* Styling first letter
+* Styling first line
+* Adding content before or after elements
+
+Examples:
+
+* before
+* after
+* first-letter
+* first-line
+
+---
+
+# 21. Animation
+
+Animation creates movement and visual effects in webpages.
+
+CSS animation is used for:
+
+* Moving elements
+* Fading effects
+* Rotations
+* Scaling
+* Loading effects
+
+Animation improves user interaction and design attractiveness.
+
+---
+
+# 22. Position
+
+Position controls the placement of elements.
+
+## Types of Position
+
+### 1. Static
+
+Default position.
+
+---
+
+### 2. Relative
+
+Moves relative to its original position.
+
+---
+
+### 3. Absolute
+
+Moves relative to the nearest positioned parent.
+
+---
+
+### 4. Fixed
+
+Stays fixed on the screen.
+
+---
+
+### 5. Sticky
+
+Acts relative until scrolling reaches a limit.
+
+
+# 23. Position Properties
+
+Position properties control movement.
+
+Main properties:
+
+* top
+* bottom
+* left
+* right
+* z-index
+
+These properties help place elements accurately.
+
+---
+
+# 24. Media Query
+
+Media query is used for responsive web design.
+
+It changes webpage styles based on:
+
+* Screen size
+* Device width
+* Resolution
+* Orientation
+
+Media queries help websites work properly on:
+
+* Mobile phones
+* Tablets
+* Laptops
+* Desktops
+
+---
+
+# 25. CSS vs CSS3
+
+## CSS
+
+* Older version in 1996
+* Basic styling features
+* Limited design capabilities
+*Limited responsive
+
+---
+
+## CSS3
+
+* Advanced version of CSS in 1999
+* Introduced modern features
+*CSS3 makes webpages more interactive and responsive.
