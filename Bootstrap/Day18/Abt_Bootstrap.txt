@@ -1,0 +1,129 @@
+1)What is Bootstrap?
+
+           Bootstrap is a frontend framework used to create responsive and modern websites quickly.
+
+            It already contains:
+
+                ready-made CSS
+                responsive grid system
+                buttons
+                cards
+                navbar
+                forms
+                utilities
+
+
+
+2)Why Bootstrap is Used?
+
+    Advantages:
+
+        Faster website development
+        Mobile responsive
+        Easy layouts
+        Ready UI components
+        Less CSS writing
+        Professional design 
+
+            (1)How to Add Bootstrap?
+
+                Use Bootstrap CDN inside <head>:
+
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+3)Important Bootstrap Classes
+        
+    1. Layout Classes
+
+        Class	                          Meaning
+        container	                 Fixed responsive width
+        container-fluid	             Full width
+        row	                         Create row
+        col	                         Column
+        col-6	                     50% width
+        col-md-6                     Responsive column
+
+        Example:
+
+        <div class="container">
+        <div class="row">
+            <div class="col">Box 1</div>
+            <div class="col">Box 2</div>
+        </div>
+        </div>
+        
+    2. Flex Classes
+
+        Class	                           Meaning
+        d-flex	                       display:flex
+        justify-content-center         horizontal center
+        justify-content-between     	space between
+        align-items-center	           vertical center
+        flex-column	                  vertical direction
+
+        Example:
+
+        <div class="d-flex justify-content-center align-items-center">
+        
+    3. Spacing Classes
+
+        Margin
+
+        Class	        Meaning
+        m-5         	margin
+        mt-5	      top margin
+        mb-5	     bottom margin
+
+        Padding
+
+        Class	        Meaning
+        p-5           	padding
+        px-5	     left & right
+        py-5	     top & bottom
+        
+    4. Text Classes
+
+        Class	         Meaning
+        text-center	   center text
+        text-white	   white color
+        fw-bold	           bold
+        fs-1	      large font size
+        
+    5. Background Classes
+
+        Class         	Color
+        bg-primary   	blue
+        bg-dark	       black
+        bg-light     	light
+        bg-danger     	red
+    
+    6. Button Classes
+
+        Class	                Meaning
+        btn	button              base
+        btn-primary           blue button
+        btn-dark	          black button
+        btn-outline-primary	  outline button
+
+        Example:
+
+        <button class="btn btn-primary">
+        Click Me
+        </button>
+        
+    7. Card Classes
+
+        Class            	Meaning
+        card	           main card
+        card-body	      card content
+        card-title      	title
+        card-text	       paragraph
+        
+    8. Image Classes
+
+        Class	             Meaning
+        img-fluid	    responsive image
+        rounded	        rounded corners
+        rounded-circle	circle image
+        shadow           	shadow
