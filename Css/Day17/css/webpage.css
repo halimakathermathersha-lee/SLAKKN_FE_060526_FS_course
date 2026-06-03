@@ -34,17 +34,36 @@ html {
     gap: 30px;
 
 }
+.a{
+   padding: 10px;
+}
+
+.a:hover{
+    transform: scale(1.1);
+    border:solid #000 1px;
+    padding: 10px;
+    border-radius: 4px; 
+}
 
 .B {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     justify-content: flex-end;
     color: white;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
     font-size: 14px;
+}
+.b:hover{
+    transform: scale(1.1);
+    border:solid #000 1px;
+    border-radius: 4px; 
+    padding: 10px;
+}
+.b{
+    padding: 10px;
 }
 
 .C {
@@ -55,6 +74,15 @@ html {
     justify-content: center;
     align-items: center;
     display: flex;
+}
+.c{
+    padding: 10px;
+}
+.c:hover{
+    transform: scale(1.1);
+    border:solid #000 1px;
+    border-radius: 4px; 
+    padding: 10px;
 }
 
 .D {
@@ -82,7 +110,7 @@ html {
 .E {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
 }
@@ -95,6 +123,12 @@ html {
     width: 160px;
     border: 1px solid #b6c9fa;
     border-radius: 10px;
+}
+.f{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 .G {
@@ -114,6 +148,10 @@ html {
     border: none;
     font-size: 25px;
     border-radius: 10px;
+}
+.I:hover{
+    background-color: white;
+    border: solid black 1px;
 }
 
 .J {
@@ -140,6 +178,9 @@ html {
     background-color: rgba(243, 237, 237, 0.484);
 
 }
+.L:hover{
+    transform: scale(1.1);
+}
 
 .M {
     font-size: 30px;
@@ -154,30 +195,20 @@ html {
 .services {
 
     width: 100%;
-
     padding: 80px;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 30px;
-
     background: #f5f5f5;
 }
 
 .service-card {
 
     background: white;
-
     padding: 40px 30px;
-
     border-radius: 20px;
-
     text-align: center;
-
     transition: 0.5s;
-
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -190,18 +221,14 @@ html {
 .service-card h2 {
 
     font-size: 28px;
-
     margin-bottom: 15px;
-
     color: #0f172a;
 }
 
 .service-card p {
 
     font-size: 16px;
-
     color: gray;
-
     line-height: 1.7;
 }
 
