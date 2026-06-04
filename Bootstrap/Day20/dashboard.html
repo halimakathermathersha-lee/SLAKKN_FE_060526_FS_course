@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Admin Dashboard</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="bg-gray-200 grid grid-cols-[250px_1fr] min-h-screen">
+    <div class="bg-blue-700 p-5 text-white">
+        <h2 class="text-xl font-semibold">Admin Panel</h2>
+        <ul class="flex flex-col justify-between items-start gap-4 py-6">
+          <li class=" transition hover:scale-110">Dashboard</li>
+          <li class=" transition hover:scale-110">Users</li>
+          <li class=" transition hover:scale-110">Courses</li>
+          <li class=" transition hover:scale-110">Reports</li>
+          <li class=" transition hover:scale-110">Settings</li>
+        </ul>
+    </div>
+
+    <div class="p-5 ">
+        <h2 class="text-xl font-semibold">Dashboard</h2>
+        <div class="py-4 grid grid-cols-4 grid-cols-3 grid-cols-2">
+          <div class="bg-white rounded-lg shadow-lg p-3 h-24  w-56"> 
+          <p class="text-sm text-gray-400 pb-2">Total Users</p>
+          <p class="text-xl font-semibold">1,250</p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-3 w-56"> 
+          <p class="text-sm text-gray-400 pb-2">Courses</p>
+          <p class="text-xl font-semibold">45</p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-3 w-56"> 
+          <p class="text-sm text-gray-400 pb-2">Rename</p>
+          <p class="text-xl font-semibold">₹75K</p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-3 w-56"> 
+          <p class="text-sm text-gray-400 pb-2">reports</p>
+          <p class="text-xl font-semibold">18</p>
+          </div>
+        </div>
+        <div class="bg-white py-3 rounded-lg shadow-lg my-7">
+          <h2 class="text-xl font-semibold p-4">Recent Users</h2>
+          <div class="px-4">
+            <table class="border-collapse p-3 w-full rounded-lg" >
+            <tr class="border-b text-start bg-blue-200 p-3 ">
+              <th class="text-start p-4">Name</th>
+              <th  class="text-start p-4">Email</th>
+              <th class="text-start p-4">Status</th>
+            </tr>
+            <tr class="border-b p-3">
+              <td class="text-start p-4">John</td>
+              <td class="text-start p-4">john@gmail.com</td>
+              <td class="text-start p-4 text-green-600">Active</td>
+            </tr>
+            <tr class="border-b p-3">
+              <td class="text-start p-4">John</td>
+              <td class="text-start p-4">john@gmail.com</td>
+              <td class="text-start p-4 text-red-600">Inactive</td>
+            </tr>
+            <tr class="border-b p-3">
+              <td class="text-start p-4">John</td>
+              <td class="text-start p-4">john@gmail.com</td>
+              <td class="text-start p-4 text-green-600">Active</td>
+            </tr>
+            <tr class="border-b p-3">
+              <td class="text-start p-4">John</td>
+              <td class="text-start p-4">john@gmail.com</td>
+              <td class="text-start p-4 text-green-600">Active</td>
+            </tr>
+          </table>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+</body>
+</html>
