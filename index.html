@@ -1,7 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Tasks</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My tasks</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 <style>
 th{
     width: 400px;
@@ -11,7 +15,34 @@ th{
     padding: 15px; 
 }
 </style>
+</head>
 <body>
+    <!--nav-->
+
+    <nav>
+        <div>
+    <div class="bg-black flex flex-row justify-between items-center w-full p-3">
+        <div class="flex flex-row justify-center items-center gap-5">
+            <div class="rounded-full bg-white w-20 h-18 p-1 m-3 flex items-center justify-center text-5xl font-bold">H
+            </div>
+            <div class="flex items-center justify-center gap-7 text-white">
+                <a href="#">Home</a>
+                <a href="#">Html</a>
+                <a href="#">Css</a>
+                <a href="#">BootStrap</a>
+                <a href="#">JavaScript</a>
+            </div>
+        </div>
+        <div> <a href="#" class="bg-red-400 w-24 rounded p-2 m-3 text-lg ">My Tasks</a>
+            <a href="#" class="bg-red-400 w-24 rounded p-2 m-3 text-lg">Team Tasks</a>
+        </div>
+    </div>
+        </div>
+    </nav>
+
+    <!--banner-->
+
+    <div><img src="Html/Assets/img/mine/1.jpg" class="w-full h-130"></div>
     <h1>Task Lists</h1>
     <hr>
     <table border="1" cellpadding="10" >
@@ -156,8 +187,14 @@ th{
                 <a href="Bootstrap/Day20/bs_card.html">Cards</a><br>
                 <a href="Bootstrap/Day20/dashboard.html">DashBoard</a><br>
                 <a href="Bootstrap/Day20/company.html">Company webpage</a><br><br>
+
                 <h3>Day21 Assignment</h3>
                 <a href="Bootstrap/Day21/card.html">Cards</a><br>
+                <a href="Bootstrap/Day21/company.html">Company</a><br>
+
+                <h3>Day22 Assignment</h3>
+                <a href="Js/Day22/intro.html">Intro</a><br>
+            
             </td>
         </tr>
     </table>
