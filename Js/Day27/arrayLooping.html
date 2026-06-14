@@ -1,0 +1,185 @@
+<script>
+    //task1
+    let a = ["Vijay", "Ajith", "Suriya", "SK"]
+    console.log(a);
+
+    //task2
+
+    let b = [200, 500, 800, 400, 600]
+    const high = () => {
+        let m = b[0]
+        for (let i = 0; i < b.length; i++) {
+            if (b[i] >= m) {
+                m = b[i]
+            }
+        }
+        console.log(m);
+
+    }
+    high()
+
+    //task3
+
+    const low = () => {
+        let l = b[0]
+        for (i = 0; i < b.length; i++) {
+            if (b[0] < l) {
+                l = b[0]
+            }
+        }
+        console.log(l);
+
+    }
+
+    low()
+
+    //task4
+    const total = () => {
+        let fV = b[0];
+        for (let i = 1; i < b.length; i++) {
+            fV = fV + b[i];
+        }
+
+        console.log(fV);
+    }
+    total();
+
+    //task5
+    const avg = () => {
+        fV = b[0];
+        for (let i = 1; i < b.length; i++) {
+            fV = fV + b[i]
+        }
+        console.log(fV / b.length);
+        console.log(b.length);
+
+
+    }
+    avg()
+
+    //task6
+
+    let hero = ["Vijay", "Ajith", "Suriya", "SK"]
+    let r = []
+    let index = 0
+    for (let i = hero.length - 1; i >= 0; i--) {
+        r[index] = hero[i]
+        index++
+    } console.log(r);
+
+    //task7
+
+    let fruit = ["Apple", "Mango", "Orange", "Banana"]
+    for (let i = 0; i < fruit.length; i++) {
+        if (fruit[i] == "Mango") {
+            console.log("Fruit Found");
+        }
+    }
+
+
+    //task8
+
+    let count = 0;
+
+    for (let f of fruit) {
+        count++;
+    }
+
+    console.log("Total Fruits =", count);
+
+
+    //task9
+
+    let h = ["Vijay", "Ajith", "Sivakarthikeyan", "SK"]
+    let d = h[0]
+    for (let w = 0; w < h.length; w++) {
+
+        if (h[w].length >= d.length) {
+            d = h[w]
+        }
+
+
+    }
+    console.log(d);
+
+    //task1 Palindrome 
+
+    let movie = "LEVEL";
+    let w
+    let x = ""
+    for (let z = movie.length - 1; z >= 0; z--) {
+        w = movie[z]
+        x += w
+    }
+    if (x == movie) {
+        console.log("This is Palindrome");
+    }
+    else {
+        console.log("This is not");
+    }
+
+    //task2 reverse
+
+    let e = "VIJAY";
+    let E = "";
+    for (let g = e.length - 1; g >= 0; g--) {
+        E += e[g]
+    }
+    console.log(E)
+
+    //task3 fibonacci
+
+    let cii = 0;
+    let rii = 1;
+    console.log(cii)
+    console.log(rii);
+
+    for (let eee = 1; eee <= 8; eee++) {
+        let fii = cii + rii;
+        console.log(fii);
+        cii = rii
+        rii = fii
+    }
+
+    //task4 count
+
+    let vow = "SURIYA";
+
+    let cnt = 0
+  for(let wee=0;wee<vow.length;wee++){
+    let letter=vow[wee]
+     if(letter=="A"||letter=="E"||letter=="I"||letter=="O"||letter=="U"){
+       cnt++
+     }
+  }
+    console.log(cnt);
+
+
+    //task5 
+
+    let cj="VIJAY"
+    let find="A"
+    cnt=0
+    for (i=0;i<cj.length;i++){
+        if(cj[i]==find){
+            cnt++
+        }
+    }
+    console.log(cnt);
+    
+
+//Bonus Anagram
+
+   let cat="LISTEN"
+   let rat="Silent"
+   let sort1 = cat.split("").sort();
+let sort2 = rat.split("").sort().join("");
+   console.log(sort1,"=",sort2);
+   
+
+
+
+
+
+
+</script>

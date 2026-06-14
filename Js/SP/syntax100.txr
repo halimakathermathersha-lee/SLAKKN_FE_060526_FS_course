@@ -1,0 +1,413 @@
+function addNumbers() {
+
+}
+
+function subtractNumbers() {
+
+}
+
+function multiplyNumbers() {
+
+}
+
+function divideNumbers() {
+
+}
+
+function findAverage() {
+
+}
+
+function checkEven() {
+
+}
+
+function checkOdd() {
+
+}
+
+function reverseString() {
+
+}
+
+function countWords() {
+
+}
+
+function printMessage() {
+
+}
+
+function showDate() {
+
+}
+
+function calculateAge() {
+
+}
+
+function findLargest() {
+
+}
+
+function findSmallest() {
+
+}
+
+function displayName() {
+
+}
+
+function checkPrime() {
+
+}
+
+function findFactorial() {
+
+}
+
+function generateTable() {
+
+}
+
+function convertUppercase() {
+
+}
+
+function convertLowercase() {
+
+}
+
+
+const addNumbers = function() {
+
+}
+
+const subtractNumbers = function() {
+
+}
+
+const multiplyNumbers = function() {
+
+}
+
+const divideNumbers = function() {
+
+}
+
+const findAverage = function() {
+
+}
+
+const checkEven = function() {
+
+}
+
+const checkOdd = function() {
+
+}
+
+const reverseString = function() {
+
+}
+
+const countWords = function() {
+
+}
+
+const printMessage = function() {
+
+}
+
+const showDate = function() {
+
+}
+
+const calculateAge = function() {
+
+}
+
+const findLargest = function() {
+
+}
+
+const findSmallest = function() {
+
+}
+
+const displayName = function() {
+
+}
+
+const checkPrime = function() {
+
+}
+
+const findFactorial = function() {
+
+}
+
+const generateTable = function() {
+
+}
+
+const convertUppercase = function() {
+
+}
+
+const convertLowercase = function() {
+
+}
+
+
+const addNumbers = () => {
+
+}
+
+const subtractNumbers = () => {
+
+}
+
+const multiplyNumbers = () => {
+
+}
+
+const divideNumbers = () => {
+
+}
+
+const findAverage = () => {
+
+}
+
+const checkEven = () => {
+
+}
+
+const checkOdd = () => {
+
+}
+
+const reverseString = () => {
+
+}
+
+const countWords = () => {
+
+}
+
+const printMessage = () => {
+
+}
+
+const showDate = () => {
+
+}
+
+const calculateAge = () => {
+
+}
+
+const findLargest = () => {
+
+}
+
+const findSmallest = () => {
+
+}
+
+const displayName = () => {
+
+}
+
+const checkPrime = () => {
+
+}
+
+const findFactorial = () => {
+
+}
+
+const generateTable = () => {
+
+}
+
+const convertUppercase = () => {
+
+}
+
+const convertLowercase = () => {
+
+}
+
+
+// ARRAY SYNTAX - 10 TIMES
+
+let fruits = ["Apple", "Mango", "Orange"]
+
+let colors = ["Red", "Blue", "Green"]
+
+let numbers = [10, 20, 30]
+
+let movies = ["Leo", "Master", "Beast"]
+
+let bikes = ["R15", "Duke", "RX100"]
+
+let cities = ["Chennai", "Madurai", "Coimbatore"]
+
+let animals = ["Lion", "Tiger", "Elephant"]
+
+let games = ["Cricket", "Football", "Chess"]
+
+let subjects = ["Maths", "Science", "English"]
+
+let mobiles = ["Samsung", "iPhone", "Redmi"]
+
+
+
+// ACCESS WITH INDEX - 10 TIMES
+
+console.log(fruits[0])
+
+console.log(colors[1])
+
+console.log(numbers[2])
+
+console.log(movies[0])
+
+console.log(bikes[1])
+
+console.log(cities[2])
+
+console.log(animals[0])
+
+console.log(games[1])
+
+console.log(subjects[2])
+
+console.log(mobiles[0])
+
+
+
+// LENGTH - 10 TIMES
+
+console.log(fruits.length)
+
+console.log(colors.length)
+
+console.log(numbers.length)
+
+console.log(movies.length)
+
+console.log(bikes.length)
+
+console.log(cities.length)
+
+console.log(animals.length)
+
+console.log(games.length)
+
+console.log(subjects.length)
+
+console.log(mobiles.length)
+
+
+// OBJECT SYNTAX - 10 TIMES
+
+let student = {
+    name: "Halima",
+    age: 20
+}
+
+let car = {
+    brand: "BMW",
+    color: "Black"
+}
+
+let mobile = {
+    company: "Samsung",
+    price: 20000
+}
+
+let movie = {
+    title: "Leo",
+    hero: "Vijay"
+}
+
+let bike = {
+    name: "R15",
+    mileage: 40
+}
+
+let laptop = {
+    brand: "HP",
+    ram: "8GB"
+}
+
+let book = {
+    title: "JavaScript",
+    pages: 300
+}
+
+let employee = {
+    name: "Arun",
+    salary: 50000
+}
+
+let game = {
+    name: "Cricket",
+    players: 11
+}
+
+let city = {
+    name: "Chennai",
+    state: "Tamil Nadu"
+}
+
+
+
+// DOT NOTATION - 10 TIMES
+
+console.log(student.name)
+
+console.log(car.brand)
+
+console.log(mobile.company)
+
+console.log(movie.hero)
+
+console.log(bike.mileage)
+
+console.log(laptop.ram)
+
+console.log(book.pages)
+
+console.log(employee.salary)
+
+console.log(game.players)
+
+console.log(city.state)
+
+
+
+// BRACKET NOTATION - 10 TIMES
+
+console.log(student["age"])
+
+console.log(car["color"])
+
+console.log(mobile["price"])
+
+console.log(movie["title"])
+
+console.log(bike["name"])
+
+console.log(laptop["brand"])
+
+console.log(book["title"])
+
+console.log(employee["name"])
+
+console.log(game["name"])
+
+console.log(city["name"])
