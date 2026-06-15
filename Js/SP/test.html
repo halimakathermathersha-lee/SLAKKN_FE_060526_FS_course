@@ -1,0 +1,216 @@
+<script>
+    let misNum=[1,2,3,5,6,8]
+    
+    // 1. Find Missing Number
+
+
+
+for(let i=1; i<misNum.length; i++){
+    let found = false
+
+    for(let j=0; j<misNum.length; j++){
+        if(misNum[j] === i){
+            found = true
+        }
+    }
+
+    if(found === false){
+        console.log(i)
+    }
+}
+
+// 2. Find First Non-Repeated Character
+
+let str1 = "programming"
+
+for(let i=0; i<str1.length; i++){
+
+    let count = 0
+
+    for(let j=0; j<str1.length; j++){
+
+        if(str1[i] === str1[j]){
+            count++
+        }
+    }
+
+    if(count === 1){
+        console.log(str1[i])
+        break
+    }
+}
+
+// 3. Find First Repeated Character
+
+let str2 = "javascript"
+
+for(let i=0; i<str2.length; i++){
+
+    let count = 0
+
+    for(let j=0; j<str2.length; j++){
+
+        if(str2[i] === str2[j]){
+            count++
+        }
+    }
+
+    if(count > 1){
+        console.log(str2[i])
+        break
+    }
+}  
+
+
+// 4. Move All Zeros To End
+
+let arr2 = [1,0,2,0,3,4,0]
+
+let result = []
+
+let zero = []
+
+for(let i=0; i<arr2.length; i++){
+
+    if(arr2[i] === 0){
+        zero[zero.length] = arr2[i]
+    }
+    else{
+        result[result.length] = arr2[i]
+    }
+}
+
+for(let i=0; i<zero.length; i++){
+    result[result.length] = zero[i]
+}
+
+console.log(result)
+
+
+   // 5. Count Occurrences
+
+let arr3 = ["Vijay","Ajith","Vijay","SK"]
+
+for(let i=0; i<arr3.length; i++){
+
+    let count = 0
+    let already = false
+
+    for(let k=0; k<i; k++){
+        if(arr3[i] === arr3[k]){
+            already = true
+        }
+    }
+
+    if(already === false){
+
+        for(let j=0; j<arr3.length; j++){
+
+            if(arr3[i] === arr3[j]){
+                count++
+            }
+        }
+
+        console.log(arr3[i] + " = " + count)
+    }
+}
+
+   // 6. Find Most Frequent Element
+
+let arr4 = [1,2,2,3,2,4,1]
+
+let maxCount = 0
+let answer = 0
+
+for(let i=0; i<arr4.length; i++){
+
+    let count = 0
+
+    for(let j=0; j<arr4.length; j++){
+
+        if(arr4[i] === arr4[j]){
+            count++
+        }
+    }
+
+    if(count > maxCount){
+        maxCount = count
+        answer = arr4[i]
+    }
+}
+
+console.log(answer)
+
+  // 7. Separate Even & Odd
+
+let arr5 = [1,2,3,4,5,6]
+
+let even = []
+let odd = []
+
+for(let i=0; i<arr5.length; i++){
+
+    if(arr5[i] % 2 === 0){
+        even[even.length] = arr5[i]
+    }
+    else{
+        odd[odd.length] = arr5[i]
+    }
+}
+
+console.log("Even :", even)
+console.log("Odd :", odd)
+
+  // 8. Rotate Array Left Once
+
+let arr6 = ["Vijay","Ajith","Suriya","SK"]
+
+let result1 = []
+
+for(let i=1; i<arr6.length; i++){
+    result1[result1.length] = arr6[i]
+}
+
+result1[result1.length] = arr6[0]
+
+console.log(result1)
+
+  // 9. Rotate Array Right Once
+
+let arr7 = ["Vijay","Ajith","Suriya","SK"]
+
+let result2 = []
+
+result2[result2.length] = arr7[arr7.length-1]
+
+for(let i=0; i<arr7.length-1; i++){
+    result2[result2.length] = arr7[i]
+}
+
+console.log(result2)
+
+
+  // 10. Find Second Longest Name
+
+let arr8 = ["Vijay","Ajith","Sivakarthikeyan","Dhanush"]
+
+let longest = ""
+let second = ""
+
+for(let i=0; i<arr8.length; i++){
+
+    if(arr8[i].length > longest.length){
+
+        second = longest
+        longest = arr8[i]
+    }
+
+    else if(arr8[i].length > second.length &&
+            arr8[i].length < longest.length){
+
+        second = arr8[i]
+    }
+}
+
+console.log(second)
+</script>

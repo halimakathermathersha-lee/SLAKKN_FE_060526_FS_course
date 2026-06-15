@@ -1,0 +1,162 @@
+<script>
+    //premitive 
+
+
+    let userAge = 10;
+    let userName = "String"
+    let t = true
+
+    console.log("Premitive type number=", userAge);
+    console.log("string userName is ", userName);
+    if (t) {
+        console.log("True");
+
+    }
+    else {
+        console.log("False");
+
+    }
+
+    let ree;
+    console.log(ree);
+
+    let n = null
+    console.log("Empty value =", n);
+
+    //Non-premitive
+
+    //function
+
+    function addData(n) {
+        n += n;
+        console.log(n);
+
+    }
+    addData(10)
+
+    const avg = function (y, k) {
+        y += k
+        let j = y / 3
+        console.log(j);
+
+    }
+    avg(3, 9)
+
+    const fun = () => {
+        console.log("Hi,Welcome Everyone");
+
+    }
+    fun()
+
+    //array
+
+    let details = ["react", 30, 9987654321, "Fresher"]
+
+    console.log(details);
+    console.log(details[0]);
+    console.log(details[3]);
+    console.log(details[details.length - 1]);
+
+
+    for (let i = 0; i < details.length; i++) {
+        console.log(details[i]);
+
+    }
+
+    let paa = ["react", 30, 9987654321, ["lkjhgfd", "lkjhgfdsa", "oiuytre", "mnbvcx"], "Fresher", [1, 3, 54, 345, 234567], "lkjhgfds", 345]
+
+    console.log(paa);
+    console.log(paa[0]);
+    console.log(paa[3][4]);
+    console.log(paa[paa.length - 1]);
+
+
+    for (let i = 0; i < paa.length; i++) {
+        console.log(paa[i]);
+
+    }
+
+    //object
+
+    let obj = {
+        name: "Alex",
+        age: 28,
+        isAdmin: true,
+        role: "lkjhgf"
+    }
+
+    console.log(obj);
+    console.log(obj.age);
+    console.log(obj.isAdmin);
+
+    console.log(obj["name"]);
+    console.log(obj["role"]);
+
+    for (let i in obj) {
+        console.log(obj[i]);
+
+    }
+
+    //nested object
+
+    let obj1 = {
+        name: "Alex",
+        age: 28,
+        isAdmin: true,
+        role: "lkjhgf",
+        details: {
+            id: 8765,
+            department: "CS",
+            salary: 87654
+        },series:[345,45678,98765,234]
+    }
+
+
+    console.log(obj1);
+    console.log(obj1.age);
+    console.log(obj1.details.department);
+
+    console.log(obj1["name"]);
+    console.log(obj1["details", "salary"]);
+
+
+
+    for (let i in obj1) {
+        console.log(obj1[i]);
+
+    }
+
+    //array of object
+
+
+    let objNew = [654, 8765, 987654, 345,{
+        name: "Alex",
+        age: 28,
+        isAdmin: true,
+        role: "lkjhgf"
+    },{
+            id: 8765,
+            department: "CS",
+            salary: 87654
+        }]
+
+
+        for (let i = 0; i < objNew.length; i++) {
+        console.log(objNew[i]);
+
+    }
+
+     for (let i in objNew) {
+        console.log(objNew[i]);
+
+    }
+
+
+
+
+
+
+
+
+
+</script>

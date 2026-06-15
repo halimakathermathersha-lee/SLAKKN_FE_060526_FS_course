@@ -146,37 +146,69 @@
     let vow = "SURIYA";
 
     let cnt = 0
-  for(let wee=0;wee<vow.length;wee++){
-    let letter=vow[wee]
-     if(letter=="A"||letter=="E"||letter=="I"||letter=="O"||letter=="U"){
-       cnt++
-     }
-  }
+    for (let wee = 0; wee < vow.length; wee++) {
+        let letter = vow[wee]
+        if (letter == "A" || letter == "E" || letter == "I" || letter == "O" || letter == "U") {
+            cnt++
+        }
+    }
     console.log(cnt);
 
 
     //task5 
 
-    let cj="VIJAY"
-    let find="A"
-    cnt=0
-    for (i=0;i<cj.length;i++){
-        if(cj[i]==find){
+    let cj = "VIJAY"
+    let find = "A"
+    cnt = 0
+    for (i = 0; i < cj.length; i++) {
+        if (cj[i] == find) {
             cnt++
         }
     }
     console.log(cnt);
-    
 
-//Bonus Anagram
 
-   let cat="LISTEN"
-   let rat="Silent"
-   let sort1 = cat.split("").sort();
-let sort2 = rat.split("").sort().join("");
-   console.log(sort1,"=",sort2);
-   
+    //Bonus Anagram
 
+    let word1 = "LISTEN";
+    let word2 = "Silent";
+
+    word1 = word1.toLowerCase();
+    word2 = word2.toLowerCase();
+
+    let sort1 = word1.split("").sort().join("");
+    let sort2 = word2.split("").sort().join("");
+
+    if (sort1 == sort2) {
+        console.log("Anagram");
+    }
+    else {
+        console.log("Not Anagram");
+    }
+
+
+    //armstrong
+
+
+let num = 153;
+
+let str = num.toString();
+
+let sum = 0;
+
+for(let i = 0; i < str.length; i++){
+
+    let digit = Number(str[i]);
+
+    sum += digit ** 3;
+}
+
+if(sum == num){
+    console.log("Armstrong Number");
+}
+else{
+    console.log("Not Armstrong Number");
+}
 
 
 
