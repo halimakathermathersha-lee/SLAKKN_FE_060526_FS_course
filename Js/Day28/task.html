@@ -1,0 +1,113 @@
+<script>
+
+    //task1
+
+    let arr=["GOAT","Leo","Master"]
+    arr.pop()
+    arr.push("Ghilli")
+    console.log(arr);
+
+    //task2
+    
+    let hero=["Ajith","Suriya","SK"]
+    hero.shift()
+    hero.unshift("Vijay")
+    console.log(hero);
+
+    //task3
+
+    let arr1=["Apple","Mango","Orange"]
+    arr1.push("Banana","grapes")
+    arr1.unshift()
+    arr1.unshift("Pineapple")
+    console.log(arr1);
+    
+    //task4
+    
+    let obj={
+   name:"Sudhan",
+   course:"MERN",
+   city:"Chennai"
+}
+   console.log("Student",obj.name);
+   console.log("Course",obj["course"]);
+   console.log("City",obj.city);
+
+   //task5
+
+   let arrObj=[
+   {
+      brand:"Samsung",
+      price:20000
+   },
+
+   {
+      brand:"iPhone",
+      price:80000
+   },
+
+   {
+      brand:"OnePlus",
+      price:35000
+   }
+]
+
+     for(let i =0;i<=2;i++ )
+     {
+        for(let r in arrObj[i]){
+            console.log(r,arrObj[i][r]);
+            
+        }
+        
+     }
+
+     //task6
+
+     let movie=[
+   {
+      movie:"GOAT",
+      collection:800
+   },
+
+   {
+      movie:"Leo",
+      collection:600
+   },
+
+   {
+      movie:"Master",
+      collection:500
+   }
+]
+
+            
+   let k=0
+   for(i=0;i<movie.length;i++){
+    k += movie[i].collection
+   }
+
+    console.log(k);
+   
+    let L=[]
+    let tT=0
+    let hM=movie[0].movie
+    let hN=movie[0].collection
+
+    for(i=0;i<movie.length;i++){
+    if(movie[i].collection > hN)
+    {
+      hN=movie[i].collection
+      hM=movie[i].movie
+
+    }
+    }
+    console.log(hN);
+    console.log(hM);
+    
+
+    
+    
+    
+   
+    
+</script>

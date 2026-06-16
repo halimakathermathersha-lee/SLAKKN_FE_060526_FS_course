@@ -1,0 +1,105 @@
+<script>
+
+    //task1
+    let arr = ["HTML", "CSS", "JavaScript"]
+    arr.push("React", "Node.js")
+    console.log(arr);
+
+    //task2
+    let arr1 = ["HTML", "CSS", "JavaScript", "React"]
+    let remove = arr1.pop()
+    console.log(remove);
+    console.log(arr1);
+
+    //task3
+
+    let arr3 = ["Apple", "Mango", "Orange", "Banana"]
+    arr3.shift()
+    console.log(arr3);
+
+    //task4
+
+    let arr4 = ["Ajith", "Suriya", "SK"]
+    arr4.unshift("Vijay", "Dhanush")
+    console.log(arr4);
+
+    //task5
+
+    let spl = ["HTML", "CSS", "Bootstrap", "React"]
+    let r = spl.splice(2, 1, "JavaScript")
+    console.log(spl);
+
+    //task6
+
+    let slc = ["HTML", "CSS", "JavaScript", "React", "Node"]
+
+    let t = slc.slice(2, 4)
+    console.log(t);
+
+
+
+    //task7
+    let student = {
+
+        name: "Sudhan",
+
+        course: "MERN",
+
+        city: "Chennai",
+
+        age: 25
+
+    };
+
+    for (let y in student) {
+        console.log(y, student[y]);
+
+    }
+
+    //task8
+
+    let v = [
+        {
+            name: "Vijay",
+            movie: "GOAT"
+        },
+
+        {
+            name: "Ajith",
+            movie: "Vidaamuyarchi"
+        },
+
+        {
+            name: "Suriya",
+            movie: "Kanguva"
+        }
+    ]
+
+     for (let i=0;i< v.length;i++) {
+        console.log(v[i].name,v[i].movie);
+        
+
+    }
+
+    //task9
+
+    let jArr=["Vijay","Ajith","Suriya","SK"]
+    let p=jArr.join(" | ")
+    console.log(p);
+    
+
+   //task10
+
+   let tam=["HTML","CSS","JavaScript","React"]
+   let g=tam.includes("React")
+   if(g){
+    console.log("Course Found");
+   }
+   else{
+    console.log("Course Not Found");
+   }
+
+   
+
+
+</script>
