@@ -1,0 +1,109 @@
+<script>
+    let hero = "Vijay"
+    let fun = () => {
+        if (hero){
+            for (let i=0;i<10;i++){
+                console.log(hero);
+                
+            }
+        }
+       
+}
+ fun()
+
+ const movie=()=>{
+    let collection=800;
+ }
+ //console.log(collection);
+
+ if(true){
+    var actor1="Ajith"
+    let actor2="Vijay"
+ }
+
+ console.log("var,so it doesn't know the block scope so it get execute outside the block also",actor1);
+ //console.log("let , it not execute outside the block",actor2);
+ 
+ const showMovie=()=>{
+    console.log("GOAT Movie Released")
+ }
+ showMovie()
+
+ const add =(a,b)=>{
+    let sum=a+b
+    console.log(sum);
+    
+ }
+ add(3,5) 
+ 
+
+ //task6 anonymous function
+   const msg=(()=>{
+     console.log("Booking Confirmed");
+     
+   })
+   ()
+//task 7 
+
+setTimeout(()=>{
+    console.log("Movie started",)
+    
+},2000)
+
+
+//task8
+
+const processOrder=(cb)=>{
+
+    cb()
+
+}
+const oRec=()=>{
+    console.log("Order Received");
+}
+const oDeli=()=>{
+    console.log("Order Delever");
+    
+}
+
+processOrder(oRec)
+processOrder(oDeli)
+
+//task9
+
+const closure=()=>{
+    let cnt1=0;
+    const cnt=()=>{
+        cnt1++
+        console.log(cnt1);
+        
+    }
+    return cnt;
+}
+const funny=closure()
+funny()
+funny()
+funny()
+
+//task10
+
+const bank=()=>{
+    const bal=5000;
+    return(newAmt)=>{
+        deposit=()=>{
+           bal +=newAmt 
+           console.log("Deposit succesfully :  ",bal);
+        }
+        withDraw=()=>{
+            bal -=newAmt 
+           console.log("Withdraw succesfully :  ",newAmt);
+           console.log( "balance: ",bal);
+           
+        }
+    }
+}
+let final=bank()
+
+final(100)
+
+</script>
