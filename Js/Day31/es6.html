@@ -1,0 +1,87 @@
+<script>
+    let stuObj = {
+        name1: "Sudhan",
+        course: "MERN",
+        city: "Chennai"
+    }
+
+    const { name1, course, city } = stuObj
+    console.log(`Student Name; ${name1}
+Course: ${course}
+City: ${city}`);
+
+    //task2
+    let heroes1 = [
+        "Vijay",
+        "Ajith"
+    ];
+
+    let heroes2 = [
+        "Suriya",
+        "SK"
+    ];
+
+    let mer = [...heroes1, ...heroes2]
+
+    const fun = () => {
+        for (let i = 0; i < mer.length; i++) {
+            console.log(mer[i]);
+        }
+    }
+    fun()
+
+    //task3
+    let result = 0
+    const calculateTotal = (...collections) => {
+        for (let i = 0; i < collections.length; i++) {
+            result += collections[i];
+        }
+        console.log(`Total Collection ${result}`);
+
+    }
+    calculateTotal(500, 800, 300, 700)
+
+    //task4
+
+
+    const employee = {
+
+        name: "Rahul",
+
+        department: "IT",
+
+        salary: 30000
+
+    };
+    let newObj = { ...employee, experience: 2 }
+    let { name, department, salary, experience } = newObj
+
+    console.log(`Name :${name}
+Department:${department}
+salary:${salary}
+Experience: ${experience}`
+    );
+
+    //task5
+
+    const enrollStudent = (studentName,...courses) => {
+    
+       
+       console.log(`Student :${studentName}
+Course: ${courses}`);       
+    }
+    enrollStudent(
+
+   "Sudhan",
+
+   "React",
+
+   "Node",
+
+   "MongoDB"
+
+);
+
+
+
+</script>

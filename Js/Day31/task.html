@@ -1,0 +1,118 @@
+<script>
+    let userName = "halim"
+
+    userName = "react"
+    console.log(userName);
+
+    //task2
+
+    if (true) {
+        let result = true;
+    }
+    //console.log(result);
+
+    //task3
+    const courseNAme = "Js"
+    //courseNAme="react"
+    console.log(courseNAme);
+    //task4
+
+    const greet = () => {
+        console.log("Welcome to java script");
+
+    }
+    greet()
+
+    //task5
+    const showHero = (heroName) => {
+        console.log("Hero name :", heroName);
+
+    }
+    showHero("Vijay")
+
+    //task6
+
+    const add = (a, b) => {
+        console.log(a + b);
+
+    }
+
+    add(10, 20)
+
+    //task7
+
+    let hero = "Vijay"
+    console.log(`My favourite hero is ${hero}`);
+
+    //tsk8
+
+    let nam = "keethy"
+    let course1 = "js"
+    let city1 = "chn"
+
+    console.log(`Name :${nam}
+Course :${course1}
+city :${city1}`);
+
+    //task9
+
+    let arr = ["Vijay", "Ajith", "Suriya"]
+    const [hero1, hero2, hero3] = arr
+    console.log(`First hero ${hero1}
+Second hero ${hero2}`);
+
+    //task10
+
+    let obj = {
+        name: "Sudhan",
+        course: "MERN",
+        city: "Chennai"
+    }
+
+    const { name, course, city } = obj;
+
+    console.log(`Name :${name}
+Course :${course}
+city :${city}`);
+
+    //task11
+    let c = ["HTML", "CSS", "JavaScript"]
+    const copyarr = [...c, "React"]
+    console.log(copyarr);
+
+    //task12
+
+    let p = ["Vijay", "Ajith"]
+    let o = ["Suriya", "SK"]
+    let mer = [...p, ...o]
+    console.log(mer);
+
+    //task13
+
+    let kit = {
+        name: "Sudhan",
+        city: "Chennai"
+    }
+
+    let copykit = { ...kit, course: "MERN" }
+    console.log(copykit);
+
+    //task14
+
+    const total1 = (...nummbers) => {
+        console.log(nummbers);
+
+    }
+    total1(10, 20, 30, 40, 50, 60)
+
+    //task15
+    let total = 0;
+    const sum = (...numbers) => {
+        for (let i = 0; i < numbers.length; i++) {
+            total += numbers[i]
+        }
+        console.log(total);
+    }
+    sum(10, 20, 30, 40, 50)
+
+</script>
