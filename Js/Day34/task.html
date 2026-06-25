@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter Ur favourite heros</label>
+    <input type="text"  id="text-one">
+    <button onclick="ifClick()" id="submit">Submit</button>
+    <p id="hide" style="display: none;">asdfghjkl</p>
+    <script>
+        const mine=document.getElementById("text-one")
+        const tranform=document.getElementById("text-one").value
+        const click=document.getElementById("submit")
+        const hidetext=document.getElementById("hide")
+        const ifClick=()=>{
+          
+           // hidetext.innerText=tranform
+            hidetext.style.display=="block"
+          
+        }
+        
+    </script>
+</body>
+</html>

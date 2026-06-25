@@ -1,0 +1,375 @@
+<script>
+    const heroes = [
+
+        "Vijay",
+
+        "Ajith",
+
+        "Suriya"
+
+    ];
+    const mine = heroes.map((e, i) => {
+        return e.toUpperCase();
+
+
+    })
+    console.log(mine);
+
+    //task2
+    const collections = [
+
+        100,
+
+        200,
+
+        300,
+
+        400
+    ];
+
+    const mine2 = collections.map(e => {
+        return e * 10
+    })
+    console.log(mine2);
+
+    //task3
+
+    const movies = [
+
+        "GOAT",
+
+        "Leo",
+
+        "Master"
+    ];
+
+    const mine3 = movies.map(e => {
+        console.log(`Movies : ${e}`);
+    })
+
+    //task4
+    const collections1 = [
+
+        100,
+
+        500,
+
+        800,
+
+        200,
+
+        900
+    ];
+
+    const mine4 = collections1.filter(e => {
+        return e > 500;
+    })
+    console.log(mine4);
+
+    //task5
+
+    const marks = [
+
+        35,
+
+        80,
+
+        20,
+
+        90,
+
+        45
+    ];
+
+    const pass = marks.filter(e => {
+        return e >= 35
+    })
+    console.log(pass);
+
+    //task6
+
+    const heroes1 = [
+
+        "Vijay",
+
+        "Ajith",
+
+        "SK",
+
+        "Suriya"
+    ];
+
+    const char = heroes1.filter(e => {
+        return e.length >= 4
+    })
+    console.log(char);
+
+    //task7
+
+    const heroes2 = [
+
+        "Vijay",
+
+        "Ajith",
+
+        "Suriya"
+    ];
+
+    const find = heroes2.find(e => {
+        return e == "Ajith"
+    })
+    console.log(find);
+
+    //task8
+
+    const collections2 = [
+
+        100,
+
+        500,
+
+        800,
+
+        200
+    ];
+
+    const find2 = collections2.find(e => {
+        return e > 400
+    })
+    console.log(find2);
+
+    //task9
+
+    const heroes3 = [
+
+        "Vijay",
+
+        "Ajith",
+
+        "Suriya"
+    ];
+
+    const result = heroes3.findIndex(e => {
+        return e == "Suriya"
+    })
+    console.log(result);
+
+    //task10
+
+    const movies1 = [
+
+        "GOAT",
+
+        "Leo",
+
+        "Master"
+    ];
+
+    const findIndex = movies1.findIndex(e => {
+        return e == "Leo"
+    })
+    console.log(findIndex);
+
+    //task11
+
+    const marks1 = [
+
+        35,
+
+        80,
+
+        20,
+
+        90
+    ];
+
+    const really = marks.some(e => {
+        return e < 35
+    })
+    console.log(really);
+
+    //task12
+
+    const collections3 = [
+
+        100,
+
+        200,
+
+        900
+    ];
+    const really1 = collections3.some(e => {
+        return e > 800
+    })
+    console.log(really1);
+
+    //task13
+
+    const marks2 = [
+
+        50,
+
+        70,
+
+        90,
+
+        40
+    ];
+
+    const really2 = marks2.every(e => {
+        return e >= 35
+    })
+
+    console.log(marks2);
+
+    // task14
+
+
+    const ages = [
+
+        20,
+
+        25,
+
+        30,
+
+        35
+    ];
+
+    const really3 = ages.every(e => {
+        return e > 18
+    })
+    console.log(really3);
+
+    //task15
+    const collections4 = [
+
+        100,
+
+        200,
+
+        300,
+
+        400
+    ];
+
+    console.log(collections4.reduce((acc, cur) => {
+        return acc + cur
+    }, 0));
+
+    //task18
+
+    const students = [
+
+        {
+            id: 1,
+            name: "Sudhan"
+        },
+
+        {
+            id: 2,
+            name: "Rahul"
+        }
+    ];
+    const prank = students.map((e, i) => {
+        return e.name
+    })
+    console.log(prank[0]);
+
+    //task19
+
+    const student = [
+
+        {
+            id: 1,
+            age: 20
+        },
+
+        {
+            id: 2,
+            age: 30
+        },
+
+        {
+            id: 3,
+            age: 18
+        }
+    ];
+
+    const rome = student.map(e => {
+        if (e.age > 20) {
+            console.log(e.id);
+
+        }
+    })
+
+    //task20
+    const student1 = [
+
+   {
+      id:1,
+      name:"Sudhan"
+   },
+
+   {
+      id:2,
+      name:"Rahul"
+   }
+];
+
+   const find1=student1.find(e=>{
+    if(e.id==2){
+        console.log(e.name);
+        
+    }
+   })
+
+   //task21
+
+   const highNum=[100,500,800,200]
+   const t=highNum.reduce((acc,cur)=>{
+    if(cur>acc){
+     acc=cur
+    }
+    return acc
+   })
+   console.log(t);
+
+   //task22
+
+   const lowNum=[100,500,800,200]
+   const s =lowNum.reduce((acc,cur)=>{
+    if(cur<acc){
+        acc=cur
+        
+    }
+    return acc
+   })
+   console.log(s);
+
+   //task23
+   const p =[10,15,20,25,30]
+   const v=p.filter(e=>{
+    return e%2==0
+   })
+   console.log(v);
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
