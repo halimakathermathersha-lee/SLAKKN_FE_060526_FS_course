@@ -1,27 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <label>Enter Ur favourite heros</label>
-    <input type="text"  id="text-one">
+    <input type="text" id="text-one">
     <button onclick="ifClick()" id="submit">Submit</button>
-    <p id="hide" style="display: none;">asdfghjkl</p>
-    <script>
-        const mine=document.getElementById("text-one")
-        const tranform=document.getElementById("text-one").value
-        const click=document.getElementById("submit")
-        const hidetext=document.getElementById("hide")
-        const ifClick=()=>{
-          
-           // hidetext.innerText=tranform
-            hidetext.style.display=="block"
-          
-        }
+    <p id="hide" style="display: none;">asdfghjkl</p><br><br>
+
+    <!-- task2 &3 -->
+
+    <p style="display: block;" id="task-two">Task 2
+        Create a paragraph and a button.
+
+        When the button is clicked, hide the paragraph.
+
+        Task 3
+        Create a paragraph and a button.
+
+        When the button is clicked, show the hidden paragraph.</p>
+    <button id="h-btn" onclick="HideBtn()">Hide</button>
+    <button id="s-btn" onclick="showBtn()">Show</button><br><br>
+
+    <!-- Task4 -->
+
+    <p style="display: block;" id="task-four">Task 4
+        Create a paragraph and a button.
+
+        Implement Toggle functionality:
+
+        Click 1 → Hide
+
+        Click 2 → Show
+
+        Click 3 → Hide
+
+        Click 4 → Show
+        Task 5
+        Create an input box for username.
+
+        If the entered username is:</p>
+
+        <button id="h-s-btn" onclick="hideAndShow()">Hide & Show</button><br><br>
+
+        <!-- Task5 -->
+
+        <label>Enter UserName</label>
+        <input type="text" id="task-five" ><br><br>
+          <label>Enter Password</label>
+        <input type="password" id="task-five-pw" >
+        <span  style="display: none;" id="strongorweak">Strong Password</span><br>
+        <button id="admin-sub" onclick="adminDashBoard()">Submit</button><span id="Login" style="display: none;">Login Success</span>
+
+
         
+
+    <script>
+        const tranform = document.getElementById("text-one")
+        const click = document.getElementById("submit")
+        const hidetext = document.getElementById("hide")
+        const ifClick = () => {
+
+            const mine = tranform.value
+            hidetext.innerHTML = `<h2>${mine}</h2>`
+            hidetext.style.display = "block"
+
+        }
+
+        const taskTwo = document.getElementById("task-two")
+        const Hbtn = document.getElementById("h-btn")
+        const Sbtn = document.getElementById("s-btn")
+
+        const HideBtn = () => {
+            taskTwo.style.display = "none";
+        }
+        const showBtn = () => {
+            taskTwo.style.display = "block"
+        }
+
+
+        const taskFour = document.getElementById("task-four")
+        const hSBtn = document.getElementById("h-s-btn")
+
+        const hideAndShow=()=>{
+            if(taskFour.style.display=="none"){
+               taskFour.style.display="block" 
+            }
+            else{
+                taskFour.style.display="none"
+            }
+        }
+
+         const taskFive = document.getElementById("task-five")
+         const password=document.getElementById("task-five-pw")
+         const adminSub=document.getElementById("admin-sub")
+         const strongorweak=document.getElementById("strongorweak")
+         const log =document.getElementById("Login")
+
+         const adminDashBoard=()=>{
+            if(password.value.length<8){
+                strongorweak.innerText="Weak Password"
+                strongorweak.style.display="block"}
+            else{
+                strongorweak.innerText="Strong Password"
+                 strongorweak.style.display="block"
+                 if(taskFive.value=="admin"){
+                   log.innerText="Login SucessFully"
+                  log.style.display="block"
+            }
+            else{
+                log.innerText="Invalid User"
+                 log.style.display="block"
+            }
+        }
+    }
+
     </script>
 </body>
+
 </html>

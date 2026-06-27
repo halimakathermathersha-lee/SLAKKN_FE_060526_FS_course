@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Login OTP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+
+    <!-- Register Page -->
+    <div id="register" class="bg-white w-80 mx-auto mt-10 p-5 rounded shadow">
+
+        <h1 class="text-2xl font-bold mb-3">Register</h1>
+
+        <input
+            id="name"
+            type="text"
+            placeholder="Enter Name"
+            class="border w-full p-2 mb-3 rounded">
+
+        <input
+            id="email"
+            type="email"
+            placeholder="Enter Email"
+            class="border w-full p-2 mb-3 rounded">
+
+        <input
+            id="number"
+            type="tel"
+            placeholder="Enter Mobile Number"
+            class="border w-full p-2 mb-3 rounded">
+
+        <button
+            onclick="registerPage()"
+            class="bg-blue-500 text-white px-4 py-2 rounded">
+            Register
+        </button>
+
+        <button
+            onclick="loginPage()"
+            class="bg-green-500 text-white px-4 py-2 rounded">
+            Login
+        </button>
+
+    </div>
+
+    <!-- OTP Page -->
+    <div id="otp" class="bg-white w-80 mx-auto mt-10 p-5 rounded shadow hidden">
+
+        <h1 class="text-2xl font-bold mb-3">OTP Verification</h1>
+
+        <input
+            id="otpNumber"
+            type="number"
+            placeholder="Enter OTP"
+            class="border w-full p-2 mb-3 rounded">
+
+        <button
+            onclick="otpCheck()"
+            class="bg-purple-500 text-white px-4 py-2 rounded">
+            Verify OTP
+        </button>
+
+    </div>
+
+    <!-- Login Page -->
+    <div id="login" class="bg-white w-80 mx-auto mt-10 p-5 rounded shadow hidden">
+
+        <h1 class="text-2xl font-bold mb-3">Login</h1>
+
+        <input
+            id="loginEmail"
+            type="email"
+            placeholder="Enter Email"
+            class="border w-full p-2 mb-3 rounded">
+
+        <input
+            id="loginNumber"
+            type="tel"
+            placeholder="Enter Mobile Number"
+            class="border w-full p-2 mb-3 rounded">
+
+        <button
+            onclick="loginCheck()"
+            class="bg-green-500 text-white px-4 py-2 rounded">
+            Login
+        </button>
+
+    </div>
+
+    <script>
+
+        let userEmail = "";
+        let userNumber = "";
+
+        function registerPage() {
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let number = document.getElementById("number").value;
+
+            if (name == "" || email == "" || number == "") {
+                alert("Please fill all fields");
+            }
+            else if (number.length != 10) {
+                alert("Enter a valid 10 digit mobile number");
+            }
+            else {
+
+                userEmail = email;
+                userNumber = number;
+
+                document.getElementById("register").style.display = "none";
+                document.getElementById("otp").style.display = "block";
+            }
+        }
+
+        function loginPage() {
+
+            document.getElementById("register").style.display = "none";
+            document.getElementById("otp").style.display = "none";
+            document.getElementById("login").style.display = "block";
+        }
+
+        function otpCheck() {
+
+            let otp = document.getElementById("otpNumber").value;
+
+            if (otp == "") {
+                alert("Enter OTP");
+            }
+            else {
+                document.getElementById("otp").style.display = "none";
+                window.location.href=""
+            }
+        }
+
+        function loginCheck() {
+
+            let loginEmail =
+                document.getElementById("loginEmail").value;
+
+            let loginNumber =
+                document.getElementById("loginNumber").value;
+
+            if (loginEmail == "" || loginNumber == "") {
+                alert("Please fill all fields");
+            }
+            else if (
+                loginEmail == userEmail &&
+                loginNumber == userNumber
+            ) {
+
+                document.getElementById("login").style.display = "none";
+                document.getElementById("dashboard").style.display = "block";
+            }
+            else {
+                alert("Invalid Email or Mobile Number");
+            }
+        }
+
+    </script>
+
+</body>
+</html>
