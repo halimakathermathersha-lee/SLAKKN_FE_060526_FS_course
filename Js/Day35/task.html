@@ -37,68 +37,17 @@
             Register
         </button>
 
-        <button
-            onclick="loginPage()"
-            class="bg-green-500 text-white px-4 py-2 rounded">
-            Login
-        </button>
-
     </div>
-
-    <!-- OTP Page -->
-    <div id="otp" class="bg-white w-80 mx-auto mt-10 p-5 rounded shadow hidden">
-
-        <h1 class="text-2xl font-bold mb-3">OTP Verification</h1>
-
-        <input
-            id="otpNumber"
-            type="number"
-            placeholder="Enter OTP"
-            class="border w-full p-2 mb-3 rounded">
-
-        <button
-            onclick="otpCheck()"
-            class="bg-purple-500 text-white px-4 py-2 rounded">
-            Verify OTP
-        </button>
-
-    </div>
-
-    <!-- Login Page -->
-    <div id="login" class="bg-white w-80 mx-auto mt-10 p-5 rounded shadow hidden">
-
-        <h1 class="text-2xl font-bold mb-3">Login</h1>
-
-        <input
-            id="loginEmail"
-            type="email"
-            placeholder="Enter Email"
-            class="border w-full p-2 mb-3 rounded">
-
-        <input
-            id="loginNumber"
-            type="tel"
-            placeholder="Enter Mobile Number"
-            class="border w-full p-2 mb-3 rounded">
-
-        <button
-            onclick="loginCheck()"
-            class="bg-green-500 text-white px-4 py-2 rounded">
-            Login
-        </button>
-
-    </div>
-
-    <script>
-
-        let userEmail = "";
-        let userNumber = "";
+ <script>
+        let dataBase=[]
 
         function registerPage() {
 
             let name = document.getElementById("name").value;
             let email = document.getElementById("email").value;
             let number = document.getElementById("number").value;
+
+            let obj={name,email,number}
 
             if (name == "" || email == "" || number == "") {
                 alert("Please fill all fields");
@@ -107,60 +56,14 @@
                 alert("Enter a valid 10 digit mobile number");
             }
             else {
-
-                userEmail = email;
-                userNumber = number;
-
-                document.getElementById("register").style.display = "none";
-                document.getElementById("otp").style.display = "block";
+                dataBase=[obj]
+              
+                console.log(dataBase);
+                
             }
         }
 
-        function loginPage() {
-
-            document.getElementById("register").style.display = "none";
-            document.getElementById("otp").style.display = "none";
-            document.getElementById("login").style.display = "block";
-        }
-
-        function otpCheck() {
-
-            let otp = document.getElementById("otpNumber").value;
-
-            if (otp == "") {
-                alert("Enter OTP");
-            }
-            else {
-                document.getElementById("otp").style.display = "none";
-                window.location.href=""
-            }
-        }
-
-        function loginCheck() {
-
-            let loginEmail =
-                document.getElementById("loginEmail").value;
-
-            let loginNumber =
-                document.getElementById("loginNumber").value;
-
-            if (loginEmail == "" || loginNumber == "") {
-                alert("Please fill all fields");
-            }
-            else if (
-                loginEmail == userEmail &&
-                loginNumber == userNumber
-            ) {
-
-                document.getElementById("login").style.display = "none";
-                document.getElementById("dashboard").style.display = "block";
-            }
-            else {
-                alert("Invalid Email or Mobile Number");
-            }
-        }
-
-    </script>
+  </script>
 
 </body>
 </html>
