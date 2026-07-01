@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Interview Questions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+
+    <div class="max-w-5xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+
+        <h1 class="text-4xl font-bold text-center text-blue-600 mb-8">
+            React Interview Questions
+        </h1>
+
+        <!-- DOM -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-green-600">
+                1. What is DOM?
+            </h2>
+
+            <p class="mt-3 text-gray-700">
+                <strong>DOM (Document Object Model)</strong> is a tree-like structure created by the browser from an HTML document.
+                It allows JavaScript to access, modify, add, or remove HTML elements dynamically.
+            </p>
+
+            <h3 class="text-xl font-semibold mt-4">Example:</h3>
+
+<pre class="bg-gray-900 text-green-400 p-4 rounded mt-2 overflow-x-auto">
+&lt;p id="demo"&gt;Hello&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("demo").innerText = "Welcome";
+&lt;/script&gt;
+</pre>
+
+            <h3 class="text-xl font-semibold mt-4">Real-time Example:</h3>
+
+            <p class="text-gray-700">
+                When you click a button and the text, color, or image changes without refreshing the page,
+                JavaScript is manipulating the DOM.
+            </p>
+        </div>
+
+        <hr class="my-6">
+
+        <!-- React -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-green-600">
+                2. What is React?
+            </h2>
+
+            <p class="mt-3 text-gray-700">
+                React is a JavaScript library used to build fast, interactive, and reusable user interfaces (UI),
+                especially for Single Page Applications (SPA).
+            </p>
+
+            <h3 class="text-xl font-semibold mt-4">Features:</h3>
+
+            <ul class="list-disc ml-8 text-gray-700 mt-2">
+                <li>Component-based architecture</li>
+                <li>Uses Virtual DOM for faster updates</li>
+                <li>Reusable code</li>
+                <li>Easy to maintain</li>
+                <li>One-way data flow</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mt-4">Real-time Examples:</h3>
+
+            <ul class="list-disc ml-8 text-gray-700 mt-2">
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Netflix</li>
+                <li>WhatsApp Web</li>
+            </ul>
+        </div>
+
+        <hr class="my-6">
+
+        <!-- Components -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-green-600">
+                3. What are Components?
+            </h2>
+
+            <p class="mt-3 text-gray-700">
+                A <strong>Component</strong> is a reusable piece of UI in React.
+                Each component contains its own HTML (JSX), CSS, and JavaScript logic.
+            </p>
+
+            <p class="mt-2 text-gray-700">
+                Instead of writing the same code multiple times,
+                you create one component and reuse it wherever needed.
+            </p>
+
+            <h3 class="text-xl font-semibold mt-4">Example:</h3>
+
+<pre class="bg-gray-900 text-green-400 p-4 rounded mt-2 overflow-x-auto">
+function Header() {
+    return &lt;h1&gt;Welcome&lt;/h1&gt;;
+}
+</pre>
+
+            <h3 class="text-xl font-semibold mt-4">Real-time Example:</h3>
+
+            <ul class="list-disc ml-8 text-gray-700 mt-2">
+                <li>Header Component</li>
+                <li>Navbar Component</li>
+                <li>Product Card Component</li>
+                <li>Footer Component</li>
+            </ul>
+        </div>
+
+        <hr class="my-6">
+
+        <!-- Functions -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-green-600">
+                4. What are Functions?
+            </h2>
+
+            <p class="mt-3 text-gray-700">
+                A <strong>Function</strong> is a block of code that performs a specific task.
+                It runs only when it is called.
+            </p>
+
+            <h3 class="text-xl font-semibold mt-4">Syntax:</h3>
+
+<pre class="bg-gray-900 text-green-400 p-4 rounded mt-2 overflow-x-auto">
+function greet() {
+    console.log("Hello");
+}
+
+greet();
+</pre>
+
+            <h3 class="text-xl font-semibold mt-4">Output:</h3>
+
+<pre class="bg-gray-900 text-yellow-400 p-4 rounded mt-2">
+Hello
+</pre>
+
+            <h3 class="text-xl font-semibold mt-4">Function with Parameters:</h3>
+
+<pre class="bg-gray-900 text-green-400 p-4 rounded mt-2 overflow-x-auto">
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(10, 20));
+</pre>
+
+            <h3 class="text-xl font-semibold mt-4">Output:</h3>
+
+<pre class="bg-gray-900 text-yellow-400 p-4 rounded mt-2">
+30
+</pre>
+
+            <h3 class="text-xl font-semibold mt-4">Real-time Example:</h3>
+
+<pre class="bg-gray-900 text-green-400 p-4 rounded mt-2 overflow-x-auto">
+function calculateTotal(price, quantity) {
+    return price * quantity;
+}
+</pre>
+        </div>
+
+        <hr class="my-6">
+
+        <!-- Interview Answers -->
+        <div>
+            <h2 class="text-2xl font-bold text-red-600 mb-4">
+                Interview One-Line Answers
+            </h2>
+
+            <ul class="list-disc ml-8 space-y-3 text-gray-700">
+                <li><strong>DOM:</strong> The Document Object Model is a tree structure of an HTML page that allows JavaScript to access and modify web page elements.</li>
+
+                <li><strong>React:</strong> React is a JavaScript library used to build fast, interactive, and reusable user interfaces.</li>
+
+                <li><strong>Component:</strong> A component is a reusable piece of UI in React that contains its own structure and logic.</li>
+
+                <li><strong>Function:</strong> A function is a reusable block of code that performs a specific task when called.</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
