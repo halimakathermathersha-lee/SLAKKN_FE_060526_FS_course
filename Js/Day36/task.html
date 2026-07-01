@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body id="body" class="bg-white">
+    <label>Type What's on ur mind</label>
+    <textarea id="text" class="border">Hi</textarea>
+    <button onclick="btn()" class="bg-blue-300">Count</button>
+    <span id="count" class="bg-red-300"></span>
+    <hr>
+
+    <!-- task2 -->
+
+    <input type="number" id="age" class="m-3" placeholder="Enter ur age">
+    <button onclick="btn2()" class="bg-blue-300">Category check</button>
+    <span id="ageText" class="bg-red-300"></span>
+    <hr>
+    <!-- task3 -->
+
+    <button id="theme" onclick="btn3()" class="border m-3 p-1 text-black">Light Mode</button>
+    <hr>
+    <!-- task4 -->
+    <label>Enter Ticket Price</label>
+    <input id="ticket" type="number" class="border m-3" placeholder=" price per ticket">
+    <input type="number" id="cnt" placeholder="Tickets" class="border w-10">
+    <button id="cntbtn" onclick="btn4()" class="border bg-blue-300">Calculator</button>
+    <p id="cnttext"></p>
+    <hr>
+    <!-- task5 -->
+    <p>Profile Card Generator</p>
+    <input type="text" id="name" placeholder="Enter Ur name" class="m-1 border"><br>
+    <input type="text" id="role" placeholder="Enter ur role" class="m-1 border"><br>
+    <input type="text" id="company" placeholder="Enter ur company" class="m-1 border"><br>
+    <button onclick="btn5()" class="bg-blue-300 p-2 border">Submit</button>
+    <div id="card" style="display: none;">
+        <div  class="flex items-center gap-3 justify-center">
+        <div class=" bg-pink-300 p-3 h-60 w-80">
+            <h2 class="text-2xl text-center">Profile Card</h2>
+            <p class="text-center text-xl border rounded" id="namep"></p>
+            <p class="text-center text-xl " id="rolep"></p>
+            <p class="text-center text-xl" id="comp"></p>
+        </div>
+    </div></div>
+
+    <script>
+
+        const btn = () => {
+
+            let count = document.getElementById("count")
+            let text = document.getElementById("text").value
+            const countfequency = (str) => {
+                let count = 0;
+                for (let i = 0; i < str.length; i++) {
+                    const char = str[i]
+                    count++
+                }
+                return count;
+
+            }
+
+            count.innerHTML = `Total Character = ${countfequency(text)}`
+
+        }
+
+        //task2
+        const btn2 = () => {
+            const Age = document.getElementById("age").value
+            const ageText = document.getElementById("ageText")
+            if (Age <= 12) {
+                ageText.innerHTML = 'Child'
+            } else if (Age <= 19) {
+                ageText.innerHTML = 'Teenager'
+            } else if (Age <= 59) {
+                ageText.innerHTML = 'Adult'
+            } else {
+                ageText.innerHTML = 'Senior Citizen'
+            }
+        }
+
+        //task3
+        const btn3 = () => {
+            const body = document.getElementById("body")
+            const theme = document.getElementById("theme")
+            if (theme.innerHTML == "Dark Mode") {
+                theme.innerHTML = "Light Mode"
+                theme.className = "text-black border m-3 p-1"
+                body.className = "bg-white text-black"
+            } else {
+                theme.innerHTML = "Dark Mode"
+                theme.className = "text-white border m-3 p-1"
+                body.className = "bg-black text-white"
+            }
+
+        }
+
+        //task4
+        const btn4 = () => {
+            const Price = document.getElementById("ticket").value
+            const ticket = document.getElementById("cnt").value
+            const cnttext = document.getElementById("cnttext")
+            const result = Price * ticket
+            cnttext.innerHTML = `Total amount =${result}`
+        }
+
+        //task5
+        const btn5 = () => {
+            const name = document.getElementById("name").value
+            const role = document.getElementById("role").value
+            const company = document.getElementById("company").value
+            const card = document.getElementById("card")
+             const namep = document.getElementById("namep")
+            const rolep = document.getElementById("rolep")
+            const companyp = document.getElementById("comp")
+            if(card.style.display=="none"){
+                card.style.display="block"
+                namep.innerText+=name
+            rolep.innerText+=role
+            companyp.innerText+=company
+            }
+        }
+
+    </script>
+</body>
+
+</html>

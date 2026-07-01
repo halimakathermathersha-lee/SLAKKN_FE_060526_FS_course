@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interview Questions</title>
+</head>
+<body>
+
+    <h1>Most Important Interview Questions</h1>
+
+    <hr>
+
+    <h2>1. Why Callback?</h2>
+
+    <p>
+        A <strong>callback</strong> is a function passed as an argument to another function.
+        It is used to execute code <strong>after another function has completed</strong>.
+    </p>
+
+    <h3>Why do we use it?</h3>
+    <ul>
+        <li>To perform asynchronous operations.</li>
+        <li>To ensure one task finishes before another starts.</li>
+    </ul>
+
+    <h3>Example</h3>
+
+    <pre><code>
+function greet(name, callback) {
+    console.log("Hello " + name);
+    callback();
+}
+
+function bye() {
+    console.log("Goodbye!");
+}
+
+greet("Halima", bye);
+    </code></pre>
+
+    <hr>
+
+    <h2>2. Why Promise?</h2>
+
+    <p>
+        A <strong>Promise</strong> is an object that represents the eventual completion
+        (or failure) of an asynchronous operation.
+    </p>
+
+    <h3>Why do we use it?</h3>
+    <ul>
+        <li>To solve Callback Hell.</li>
+        <li>To make asynchronous code easier to manage.</li>
+        <li>To provide better error handling.</li>
+    </ul>
+
+    <h3>Example</h3>
+
+    <pre><code>
+const promise = new Promise((resolve, reject) => {
+    let success = true;
+
+    if (success) {
+        resolve("Data Loaded");
+    } else {
+        reject("Error");
+    }
+});
+
+promise
+.then(result => console.log(result))
+.catch(error => console.log(error));
+    </code></pre>
+
+    <hr>
+
+    <h2>3. Why Async/Await?</h2>
+
+    <p>
+        <strong>async/await</strong> is a cleaner way to work with Promises.
+        It makes asynchronous code look like normal synchronous code.
+    </p>
+
+    <h3>Why do we use it?</h3>
+    <ul>
+        <li>Cleaner code.</li>
+        <li>Easier to read.</li>
+        <li>Easier to debug.</li>
+        <li>No long .then() chains.</li>
+    </ul>
+
+    <h3>Example</h3>
+
+    <pre><code>
+function getData() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve("Data Received");
+        }, 2000);
+    });
+}
+
+async function display() {
+    const result = await getData();
+    console.log(result);
+}
+
+display();
+    </code></pre>
+
+    <hr>
+
+    <h2>4. Why Fetch?</h2>
+
+    <p>
+        <strong>fetch()</strong> is used to communicate with APIs.
+        It sends requests and receives data from a server.
+    </p>
+
+    <h3>Why do we use it?</h3>
+    <ul>
+        <li>Retrieve data (GET).</li>
+        <li>Send data (POST).</li>
+        <li>Update data (PUT).</li>
+        <li>Delete data (DELETE).</li>
+    </ul>
+
+    <h3>Example</h3>
+
+    <pre><code>
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.log(error));
+    </code></pre>
+
+    <hr>
+
+    <h2>Interview Flow</h2>
+
+    <pre>
+Callback
+    ↓
+Problem:
+Callback Hell
+
+Promise
+    ↓
+Problem:
+Too many .then()
+
+Async/Await
+    ↓
+Cleaner Promise Syntax
+
+Fetch
+    ↓
+Uses Promise internally
+    ↓
+Mostly used with async/await
+    </pre>
+
+    <hr>
+
+    <h2>Quick Interview Answers</h2>
+
+    <p><strong>Why Callback?</strong><br>
+    To execute a function after another function completes, especially for asynchronous operations.</p>
+
+    <p><strong>Why Promise?</strong><br>
+    To avoid Callback Hell and handle asynchronous operations more effectively.</p>
+
+    <p><strong>Why Async/Await?</strong><br>
+    To write Promise-based code in a cleaner, more readable, synchronous-looking style.</p>
+
+    <p><strong>Why Fetch?</strong><br>
+    To communicate with APIs by sending requests and receiving data from servers.</p>
+
+</body>
+</html>

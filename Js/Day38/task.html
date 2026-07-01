@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Price</th>
+        </thead>
+        <tbody id="table-data">
+
+        </tbody>
+    </table>
+    <hr>
+    <!-- task2 -->
+
+
+    <form>
+        <h2>Form</h2>
+        <label>Enter Ur name</label>
+        <input type="text" id="name" placeholder="Enter Ur name"><br>
+        <label>Enter Ur Role</label>
+        <input type="text" id="role" placeholder="Enter ur role"><br>
+        <label>Enter You company</label>
+        <input type="text" id="company" placeholder="Enter ur company"><br>
+        <label>Enter You salary</label>
+        <input type="number" id="salary" placeholder="Enter ur salary"><br>
+        <label></label>
+        <button type="submit" onclick="btn(event)">Submit</button>
+    </form>
+    <table border="1">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>company</th>
+            <th>salary</th>
+        </thead>
+        <tbody id="table-data1">
+
+        </tbody>
+    </table>
+    <script>
+        const datBase = async () => {
+            const datas = await fetch("https://dummyjson.com/products")
+            const changeData = await datas.json()
+            const result = changeData.products
+            //console.log(result);
+            const tableData = document.getElementById("table-data")
+
+            result.forEach((e, i) => {
+                tableData.innerHTML += `
+                <tr>
+                    <td>${e.id}</td>
+                    <td>${e.title}</td>
+                    <td>${e.description}</td>
+                    <td>${e.category}</td>
+                    <td>${e.price}</td>
+                    </tr>`
+            })
+        }
+        datBase()
+
+        const btn = (e) => {
+            event.preventDefault()
+            const name = document.getElementById("name").value
+            const role = document.getElementById("role").value
+            const company = document.getElementById("company").value
+            const salary = document.getElementById("salary").value
+            const obj = { name, role, company, salary };
+            let arr = JSON.parse(localStorage.getItem("arr")) || [];
+            arr.push(obj);
+            localStorage.setItem("arr", JSON.stringify(arr));
+            const tableData1 = document.getElementById("table-data1")
+
+            arr.forEach((e, i) => {
+                tableData1.innerHTML += `
+<tr>
+    <td>${i + 1}</td>
+    <td>${e.name}</td>
+    <td>${e.role}</td>
+    <td>${e.company}</td>
+    <td>${e.salary}</td>
+</tr>
+`
+            })
+            console.log(arr);
+
+        }
+
+    </script>
+</body>
+
+</html>
